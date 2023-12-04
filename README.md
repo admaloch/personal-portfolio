@@ -1,7 +1,7 @@
 # Personal portfolio page
 
 <b>About this project:</b><br/> 
-This is an early portfolio project built with HTML, CSS and JavaScript. The intent of this project was to experiment, try different things out and get more comfortable with the raw JavaScript fundamentals like DOM manipulation and working with events. 
+This is an early portfolio project built with HTML, CSS and JavaScript. The intent of this project was to experiment, try different things out and get more comfortable with web design and the raw JavaScript fundamentals like DOM manipulation and working with events. 
 
 <b>Technologies used:</b><br/> 
 --HTML<br/>
