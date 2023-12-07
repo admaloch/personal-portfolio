@@ -4,7 +4,7 @@
 /* @media (max-width: 1400px) {
 }
  */
- 
+
 
 
 body {
@@ -24,8 +24,8 @@ html {
 }
 
 #main {
-    opacity: 0;
-    display: none;
+    opacity: 1;
+    display: block;
     transition: opacity 1.5s ease-in;
 }
 
@@ -40,7 +40,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
- 
+
     border-radius: 22px;
 }
 
@@ -130,26 +130,32 @@ html {
 .footer-container ul li {
     list-style: none;
     margin: 0 1.3em;
+
 }
 
 .footer-container ul li a {
     text-decoration: none;
     color: #003459;
-    transition: opacity .25s;
+    transition: all .25s ease-in-out;
+    opacity: .5;
 }
 
 .footer-container ul li a:hover {
-    opacity: .5;
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .port-code {
     text-decoration: none;
     color: #9a031e;
-    transition: color 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    opacity: .5;
 }
 
 .port-code:hover {
+    opacity: 1;
     color: #0f4c5c;
+    text-decoration: underline;
 }
 
 
@@ -262,7 +268,7 @@ html {
         font-size: .7rem;
     }
 
-   
+
 }
 
 @media (max-width: 430px) {

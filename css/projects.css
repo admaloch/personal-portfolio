@@ -106,7 +106,7 @@ padding-bottom: 9em;
 }
 .hover-wrapper a {
     text-decoration: none;
-    color: inherit 
+    color: inherit
 }
 .code-links {
     margin-top: 3rem;
@@ -189,20 +189,46 @@ padding-bottom: 9em;
 .project-info-wrap {
     color: black;
     font-size: 1rem;
-    width: 80%;
-    margin: 0 auto;
-    padding: 1em 0;
+    height: 100%;
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    padding: 1em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-info-wrap h5,
+.project-info-wrap p {
+  letter-spacing: 2px;
 }
 .project-info-appear {
     opacity: 100;
-    height: 50%;
+    height: 100%;
 }
 .project-info-remove {
     opacity: 0;
     height: 0;
 }
+
+.close-project-bio {
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+}
+.close-project-bio img {
+    cursor: pointer;
+    border: white solid 1px;
+    border-radius: 50%;
+    transition: .2s ease-in-out all;
+}
+.close-project-bio img:hover {
+
+border: black solid 1px;
+
+}
 @media (max-width: 1400px) {
-  
+
     .image-description {
         font-size: .75rem;
    }
@@ -218,7 +244,7 @@ padding-bottom: 9em;
    }
 }
 @media (max-width: 1200px) {
-   
+
     .image-description {
         font-size: .75rem;
         margin-top: 0em;
@@ -303,7 +329,7 @@ padding-bottom: 9em;
    }
 }
 @media (max-width: 768px) {
-    
+
     .project-text {
         margin-left: 0;
    }
@@ -351,7 +377,7 @@ padding-bottom: 9em;
     .projects-main .col-sm-4:nth-of-type(2), .projects-main .col-sm-4:nth-of-type(3) {
         margin-top: -50px;
    }
-  
+
     .images {
         margin-bottom: 0;
         display: flex;
@@ -367,7 +393,7 @@ padding-bottom: 9em;
         display: none;
         margin: 0;
    }
-  
+
     .image-title {
         font-size: 1em;
         margin-top: 2rem;
@@ -400,10 +426,10 @@ padding-bottom: 9em;
     .project-info-wrap {
         font-size: .6rem;
         letter-spacing: .5em;
-   } 
+   }
 }
 @media (max-width: 475px) {
-  
+
     .image-title {
         font-size: .85rem;
    }
@@ -421,13 +447,13 @@ padding-bottom: 9em;
    }
 }
 @media (max-width: 430px) {
-  
+
     .projects-main .col-sm-4:nth-of-type(2), .projects-main .col-sm-4:nth-of-type(3) {
         margin-top: -30px;
    }
 }
 @media (max-width: 400px) {
-  
+
     .project-description-btn {
         font-size: .4em;
         margin-top: 1rem;
@@ -443,7 +469,7 @@ padding-bottom: 9em;
    }
 }
 @media (max-width: 335px) {
-   
+
     .hover-wrapper {
         margin-top: .3rem;
    }

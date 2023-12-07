@@ -1,16 +1,16 @@
 // main loading animation
-const loader = document.querySelector('.loader');
-const main = document.querySelector('#main')
+// const loader = document.querySelector('.loader');
+// const main = document.querySelector('#main')
 
-function init() {
-    setTimeout(() => {
-        loader.style.opacity = 0;
-        loader.style.display = 'none';
-        main.style.display = 'block'
-        setTimeout(() => main.style.opacity = 100, 50)
-    }, 1500)
-}
-init();
+// function init() {
+//     setTimeout(() => {
+//         loader.style.opacity = 0;
+//         loader.style.display = 'none';
+//         main.style.display = 'block'
+//         setTimeout(() => main.style.opacity = 100, 50)
+//     }, 1500)
+// }
+// init();
 
 function fadeIn(item) {
     item.style.opacity = 100;
@@ -86,11 +86,6 @@ const projectInfo = document.querySelectorAll('.project-info')
 
 projectButton.forEach(button => {
     button.addEventListener('click', () => {
-        if (button.innerText === 'More Details') {
-            button.innerText = 'Close'
-        } else {
-            button.innerText = 'More Details'
-        }
         projectInfo.forEach(info => {
             info.classList.toggle('project-info-appear')
             info.scrollTop = 0;
@@ -106,8 +101,15 @@ imageOverlay.forEach(overlay => {
             info.classList.remove('project-info-appear')
             info.scrollTop = 0;
         })
-        projectButton.forEach(button => {
-            button.innerText = 'More Details'
+    })
+})
+// reset details after mouse leaves project box
+const closeProjectBio = document.querySelectorAll('.close-project-bio')
+closeProjectBio.forEach(btn => {
+    btn.addEventListener('click', () => {
+        projectInfo.forEach(info => {
+            info.classList.remove('project-info-appear')
+            info.scrollTop = 0;
         })
     })
 })
@@ -128,30 +130,67 @@ function classToggle(evt, find, toggle) {
     });
 }
 
-for (let i = 0; i < bubbleContainer.length; i++) {
-    contactBubbles[i].addEventListener('mouseover', function (e) {
-        classToggle(e, 'bubble-container', 'remove-opacity');
-        classToggle(e, 'contact-info', 'text-dark');
-    });
-    contactBubbles[i].addEventListener('mouseout', function (e) {
-        classToggle(e, 'bubble-container', 'remove-opacity');
-        classToggle(e, 'contact-info', 'text-dark');
-    });
-}
+// for (let i = 0; i < bubbleContainer.length; i++) {
+//     contactBubbles[i].addEventListener('mouseover', function (e) {
+//         classToggle(e, 'bubble-container', 'remove-opacity');
+//         classToggle(e, 'contact-info', 'text-dark');
+//     });
+//     contactBubbles[i].addEventListener('mouseout', function (e) {
+//         classToggle(e, 'bubble-container', 'remove-opacity');
+//         classToggle(e, 'contact-info', 'text-dark');
+//     });
+// }
 
 //bring in  hover modal and overlay
 contactBubbles.forEach((contacts) => {
-    contacts.addEventListener('mouseenter', function (e) {
+    contacts.addEventListener('click', function (e) {
         overlay.classList.add('display');
+
+        document.body.style.paddingRight = `${window.innerWidth - document.body.offsetWidth}px`
+        document.body.style.overflowY = 'hidden'
         modalContainer.classList.add('display');
         modalTitle.innerText = contacts.title;
         modalParagraph.innerText = contacts.dataset.content;
     })
-    contacts.addEventListener('mouseleave', function (e) {
+    // contacts.addEventListener('mouseleave', function (e) {
+    //     overlay.classList.remove('display');
+    //     modalContainer.classList.remove('display');
+    // })
+})
+
+$('#modal-overlay').click(function (event) {
+    console.log('modal overlay clicked')
+
+    if (!$(event.target).closest('#modal-container').length && !$(event.target).is('#modal-container')) {
+
+        document.body.style.paddingRight = '0px'
+        document.body.style.overflowY = 'auto'
+
+
         overlay.classList.remove('display');
         modalContainer.classList.remove('display');
-    })
-})
+
+
+
+    }
+
+
+});
+
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function () {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function () { };
+}
 
 
 

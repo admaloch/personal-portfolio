@@ -7,7 +7,7 @@
     height: 100vh;
     display: none;
     opacity: 0;
-    background-color: #fff;
+    background-color: black;
     transition: all 0.5s ease-in-out;
 }
 #modal-container {
@@ -17,20 +17,25 @@
 }
 .modal-overlay.display, #modal-container.display {
     display: block;
-    opacity: .75;
+    opacity: 1;
+    z-index: 50;
 }
 .modal-contact {
-    background-color: #003459;
-    color: white;
+    background-color: #fff;
+    color: black;
     position: fixed;
-    width: 40%;
-    height: auto;
-    left: 30%;
-    top: 20vh;
-    padding: 2rem;
+    width: 50%;
+    height: 30%;
+    left: 25%;
+    top: 35%;
+    padding: 3rem;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     animation: slide-down 1s ease-in-out forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
 }
 .modal-title {
     text-decoration: underline;
@@ -47,9 +52,9 @@
    }
 }
 @media (max-width: 992px) {
-    .contact-bubbles {
+    /* .contact-bubbles {
         width: 90%;
-   }
+   } */
     .contact-btn {
         width: 30%;
    }
