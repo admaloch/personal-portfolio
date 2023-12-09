@@ -17,8 +17,8 @@
     font-size: .5em;
     width: 0%;
     padding: 0px;
-    color: black;
-    background-color: rgb(252, 246, 189, .5);
+    color: white;
+    background-color: #ef476f;
 }
 @media (max-width: 992px) {
     .progress-container {
