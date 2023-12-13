@@ -60,6 +60,33 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 })
 
+// about me
+
+$('#about-section').fadeIn('slow');
+
+const bioBtns = document.querySelectorAll('.bio-btn')
+bioBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const btnDataId = btn.getAttribute('data-id')
+        bioBtns.forEach(items => items.classList.remove('active'))
+        btn.classList.add('active')
+        document.querySelectorAll('.bio-section').forEach(bio => {
+            console.log(btnDataId)
+            const bioDataId = bio.getAttribute('data-id')
+
+            if (btnDataId === bioDataId) {
+                $(`.bio-section[data-id=${bioDataId}]`).fadeIn('slow');
+            } else {
+
+                bio.style.display = 'none'
+
+            }
+
+        })
+    })
+})
+
+
 
 // bootstrap make list disapear if clicked offscreen in addition to hamburger button toggle
 window.onload = function () {

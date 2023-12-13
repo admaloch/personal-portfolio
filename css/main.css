@@ -87,18 +87,7 @@ html {
     margin-bottom: 1em;
 } */
 
-.bio-container {
-    width: 70%;
-}
 
-#about {
-    padding-bottom: 2em;
-}
-
-#bio-accordion {
-    width: 100%;
-    width: 500px;
-}
 
 
 
@@ -196,10 +185,7 @@ html {
 }
 
 @media (max-width: 768px) {
-    .portrait-style {
-        width: 13em;
 
-    }
 
     .display-5 {
         font-size: 1.8rem !important;
@@ -232,9 +218,9 @@ html {
         font-size: .8rem;
     }
 
-    .portrait-style {
-        width: 11em;
-    }
+  .portrait-style {
+    min-width: 1000px;
+  }
 
     #myCarousel {
         width: 70%;

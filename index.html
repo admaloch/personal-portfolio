@@ -22,6 +22,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/social-media.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/skills.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -90,8 +91,8 @@
         <section id="home" class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center mb-0">
             <div class="content text-center ">
                 <h1 class=" display-1 mb-1 main-text">Davis Maloch</h1>
-                <h2 class=" display-4 main-text">Web-Developer</h2>
-                <h2 class=" display-4 main-text">Portfolio Site</h2>
+                <h2 class=" display-4 main-text">Self taught Developer</h2>
+
                 <a href="#about" class="btn btn-lg main-btn">More</a>
             </div>
         </section>
@@ -116,48 +117,94 @@
                 <h3 class="display-5 mt-5 mb-5"> About Me:</h3>
                 <div class="about-container">
                     <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center ">
+                        <div id="photo-section"
+                            class="col-12 col-md-4 d-flex justify-content-center align-items-center ">
                             <img class="img-fluid portrait-style" src="./img/portrait.jpg" alt="portrait photo">
                         </div>
-                        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                            <div class="accordion" id="bio-accordion">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      My life
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#bio-accordion">
-                                    <div class="accordion-body">
+                        <div id="personal-info-section"
+                            class="col-12 col-md-8 d-flex  justify-content-center align-items-center">
+                            <div class="bio-section-btns d-flex flex-column justify-content-center">
+                                <div data-id="about" class="bio-btn active">About Me</div>
+                                <div data-id="education" class="bio-btn">Education</div>
+                                <div data-id="coding" class="bio-btn">Coding Journey</div>
+                                <div data-id="career" class="bio-btn">Career</div>
+                                <div data-id="music" class="bio-btn">Music</div>
+                                <div data-id="hobbies" class="bio-btn">Hobbies</div>
 
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Accordion Item #2
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#bio-accordion">
-                                    <div class="accordion-body">
 
-                                    </div>
-                                  </div>
+                            </div>
+                            <div class="about-text">
+                                <div id="about-section" data-id="about" class="bio-section ">
+
+                                    <p>I'm Davis and I'm a web developer currently residing in Tallahassee, FL.
+                                        Throughout my life, I've always had a profound appreciation for
+                                        both technology and the arts. In early 2022 I began my journey learning to code,
+                                        and developed a passion for the
+                                        transformative
+                                        possibilities technology offers. Check out the rest of my Bio if you want to
+                                        learn more about my background, or move on to see my current skills and
+                                        projects. </p>
                                 </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Accordion Item #3
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#bio-accordion">
-                                    <div class="accordion-body">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
+                                <div id="education-section" data-id="education" class="bio-section ">
+
+                                    <p>I began my academic journey at Jacksonville University, majoring in Music
+                                        Business and Jazz Guitar. The program placed emphasis on integrating private
+                                        studies with production, marketing, and business. Subsequently, I transferred to
+                                        Florida State University to earn my Bachelor's degree in Music for Classical
+                                        Guitar, where the curriculum placed a heightened focus on private studies,
+                                        theory, and historical perspectives.</p>
+
                                 </div>
-                              </div>
+                                <div id="coding-section" data-id="coding" class="bio-section ">
+
+                                    <p>In early 2022, I began my journey learning to code. I spent countless hours
+                                        pouring over a multitude of online resources often spending 10+ hours a day on
+                                        it. My specialty is on the front-end, but I am also interested in dipping my
+                                        toes in teh back-end as well. My abilities currently sit in the JavaScript
+                                        realm, but I hope to take on Python in the near future.
+                                        This self-taught journey has not only equipped me with a solid foundation in web
+                                        development, but has also honed my ability to teach myself new skills and stay
+                                        up-to-date on the latest technologies.
+
+                                    </p>
+
+                                </div>
+                                <div id="career-section" data-id="career" class="bio-section ">
+
+                                    <p>In early 2023, I embarked on the first chapter of my career by joining the team
+                                        at Florida Memory. We maintain a vast collection of historical records, maps,
+                                        photos, and films, and my role involves crafting tools to improve public
+                                        accessibility to these resources. Additionally, I am in charge of making changes
+                                        to the website and implementing new features and technologies.
+                                    </p>
+                                    <p>
+                                        This has been a unique challenge as the rest of my team comprises historians and
+                                        archivists. As a result, I've learned to navigate the intersection of
+                                        technology and historical preservation. This experience has been both fulfilling
+                                        and demanding, requiring adeptness in translating technical complexities for my
+                                        non-tech-savvy colleagues while spearheading initiatives that bridge the gap
+                                        between history and innovation.</p>
+
+                                </div>
+                                <div id="music-section" data-id="music" class="bio-section ">
+
+                                    <p>I am actively engaged in various music projects, both as a solo artist and
+                                        through collaborations. I'm also a producer and
+                                        occasionally take on the roles of mixing and mastering for bands and artists.
+                                        Additionally, I have created scores for a
+                                        handful of student video art projects over the years and am eager to further
+                                        these pursuits over the coming years.</p>
+
+                                </div>
+                                <div id="hobbies-section" data-id="hobbies" class="bio-section ">
+
+                                    <p>In addition to everything else, I like to stay busy and have a wide range of
+                                        hobbies. I'm a dog lover and have an Australian Shepherd/Australian Cattle Dog
+                                        mix. I've also recently gotten into woodworking and sewing.
+                                        Finally, I enjoy traveling and dream of exploring more of the world soon.</p>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -181,65 +228,87 @@
                 <!-- animated boxes -->
                 <!--hover boxes-->
                 <div class="mt-5 ">
-                    <div class="skills-row  ">
-                        <!-- image 1 -->
-                        <div id="skill-box-1" class="col-sm-6 view view1 view-tenth img-fluid ">
-                            <!-- <div class="box-style box-1">
-                            <div class="box-font box-reveal-left">Javascript</div>
-                        </div> -->
-                            <div class="image-wrapper">
-                                <img src="./img/javascript4.png">
-                            </div>
-                            <div class="skill-info d-flex flex-column justify-content-center align-items-center">
-                                <h2>Javascript</h2>
-                                <p>Comfortable with Javascript and able to research and deploy as needed.
-                                </p>
-                            </div>
-                        </div>
-                        <!--image 2-->
-                        <div id="skill-box-2" class="col-sm-6 view view2 view-tenth img-fluid">
-                            <!-- <div class="box-style box-2">
-                            <div class="box-font box-reveal-right"> React</div>
-                        </div> -->
-                            <div class="image-wrapper">
-                                <img src="./img/react5.jpg">
-                            </div>
-                            <div class="skill-info d-flex flex-column justify-content-center align-items-center">
-                                <h2>React</h2>
-                                <p>Currently studying react, but comfortable with fundamentals and able to deploy basic
-                                    applications using best practices.
-                                </p>
+                    <div class="accordion" id="bio-accordion">
 
-                            </div>
-                        </div>
-                    </div>
-                    <!--image 3-->
-                    <div class="skills-row ">
-                        <div id="skill-box-3" class="col-sm-6 view view3 view-tenth img-fluid">
-                            <!-- <div class="box-style box-3">
-                            <div class="box-font box-reveal-left"> Design</div>
-                        </div> -->
-                            <img src="./img/responsive7.jpeg">
-                            <div class="skill-info d-flex flex-column justify-content-center align-items-center">
-                                <h2>Responsive Design</h2>
-                                <p>Comfortable with Html, CSS, Bootstrap, front-end frameworks and best responsive
-                                    design practices.
-                                </p>
-                            </div>
-                        </div>
 
-                        <!--image 4-->
-                        <div id="skill-box-4" class="col-sm-6 view view4 view-tenth img-fluid">
-                            <!-- <div class="box-style box-4">
-                            <div class="box-font box-reveal-right"> Backend</div>
-                        </div> -->
-                            <div class="image-wrapper">
-                                <img src="./img/backend3.png">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Javascript
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    In my current professional capacity, I predominantly use vanilla JavaScript to fulfill the requirements of my role. My proficiency extends to a knowledge of best practices, understanding of fundamental concepts, adept utilization of APIs, seamless handling of asynchronous JavaScript, and proficient manipulation of intricate data structures. 
+                                </div>
                             </div>
-                            <div class="skill-info d-flex flex-column justify-content-center align-items-center">
-                                <h2>Backend</h2>
-                                <p>Currently studying command line basics and intend to learn about working with
-                                    databases and setting up servers in the near future.</p>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    React
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    I've developed a strong level of comfort and proficiency with React, encompassing a nuanced understanding of component structure, adept management of state, seamless facilitation of data flow between components, and utilization of advanced hooks. These include useReducer, the context API, useMemo, and portals.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    TypeScript
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    Having successfully completed a comprehensive course in TypeScript, I possess a high level of proficiency and confidence in leveraging TypeScript across diverse applications, including React. I understand fundamental aspects of type annotation,  variables, functions, object types, array types, interfaces, classes, generics, and nuanced type narrowing techniques. Additionally, I am familiar with TypeScript's compilation process, allowing me to navigate the intricacies of what occurs behind the scenes in a TypeScript application.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Node
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Hobbies
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                             </div>
                         </div>
                     </div>
