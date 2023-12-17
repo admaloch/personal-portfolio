@@ -10,7 +10,7 @@
 
 .row-bubbles {
     z-index: 10;
-    opacity: .7;
+    /* opacity: .7; */
     cursor: pointer;
     width: 105px;
     height: 105px;

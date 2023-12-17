@@ -68,6 +68,7 @@
 #bio-accordion .accordion-body {
     background-color: #f8edeb;
     color: #003459;
+    font-family: var(--font3);
 }
 
 #bio-accordion .accordion-button.collapsed::after {
@@ -105,7 +106,7 @@
 @media screen and (min-width:576px) {
     .rw-words {
         position: relative;
-        bottom: .1rem;
+        bottom: .35rem;
         left: .2rem;
     }
 }
@@ -119,7 +120,7 @@
 @media screen and (min-width:992px) {
     .rw-words {
         /* top: -.7rem; */
-        bottom: .7rem;
+        bottom: .95rem;
         height: 50px;
         max-width: 400px;
     }
@@ -131,7 +132,7 @@
 
 @media screen and (min-width:1200px) {
     .rw-words {
-        bottom: .8rem;
+        bottom: 1rem;
 
     }
 
