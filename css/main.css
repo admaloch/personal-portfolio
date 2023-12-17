@@ -22,6 +22,7 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    color: #003459;
 }
 
 #main {
@@ -66,27 +67,62 @@ html {
 
 /* more box */
 .main-btn {
-    border: black solid 2px;
-    border-radius: 0;
+    /* border: black solid 2px; */
+    /* border-radius: 0; */
     margin-top: 3rem;
     transition: .5s;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    padding: 10px 50px;
+    /* font-size: 1.5rem; */
+    /* letter-spacing: 5px; */
+    /* padding: 10px 50px; */
+    padding: 0;
+
 }
 
-.main-btn:hover,
-.main-button:focus {
-    color: #fff !important;
-    background: rgba(0, 0, 0, 0.5) !important;
-    border: #fff solid 2px !important;
+.main-btn:hover {
+    border: none;
 }
 
-/* .portrait-style {
+/* popover css */
+#tooltip {
+    background: transparent;
+    color: #003459;
+    border: #003459 solid 2px;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    display: none;
+    margin-top: 1rem;
+}
 
-    border-radius: 50%;
-    margin-bottom: 1em;
-} */
+#tooltip[data-show] {
+    display: block;
+}
+
+
+
+
+.main-btn i {
+    font-size: 3rem;
+    color: #003459;
+    opacity: 1;
+    transition: .25s ease-in-out all;
+}
+
+.main-btn i:hover {
+    opacity: .7;
+    transform: scale(1.1);
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .main-btn i {
+        font-size: 4rem;
+    }
+}
+
 
 
 
@@ -150,9 +186,7 @@ html {
 
 
 @media (max-width: 1200px) {
-    #myCarousel {
-        width: 80%;
-    }
+
 
     .bio-container {
         width: 80%;
@@ -170,13 +204,6 @@ html {
         font-size: .9rem;
     }
 
-    .main-btn {
-        margin-top: 3rem;
-        transition: .5s;
-        font-size: 1.6rem;
-        letter-spacing: 5px;
-        padding: 7px 30px;
-    }
 
     .display-5 {
         font-size: 1.9rem !important;
@@ -196,24 +223,13 @@ html {
         font-size: 1.8rem !important;
     }
 
-    .main-btn {
-        margin-top: 3rem;
-        transition: .5s;
-        font-size: 1.1rem;
-        letter-spacing: 5px;
-        padding: 6px 25px;
-    }
+
 }
 
 @media (max-width: 576px) {
 
 
-    .main-btn {
-        margin-top: 3rem;
-        font-size: 1.2rem;
-        letter-spacing: 5px;
-        padding: 4px 20px;
-    }
+
 
     .bio-container {
         padding: 0;
@@ -241,7 +257,8 @@ html {
         padding-bottom: 1rem;
     }
 
-    .footer-container p, .footer-container ul {
+    .footer-container p,
+    .footer-container ul {
         margin: .1rem 0;
     }
 
@@ -260,18 +277,12 @@ html {
         font-size: .6rem;
     }
 
-    .main-btn {
-        margin-top: 3rem;
-        font-size: 1rem;
-        letter-spacing: 5px;
-        padding: 3px 15px;
+
+
+
+    .footer-container ul {
+        display: none;
     }
-
-
-
-   .footer-container ul {
-    display: none;
-   }
 
     .footer-container p {
         margin-bottom: 0;

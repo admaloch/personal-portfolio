@@ -93,10 +93,19 @@
                 <h1 class=" display-1 mb-1 main-text">Davis Maloch</h1>
                 <h2 class=" display-4 main-text">Self taught Developer</h2>
                 <h2 class=" display-4 main-text">Tallahassee Florida</h2>
+                <div class="main-btn">
+                    <a href="#about">
+                        <i id="arrow-scroll-trigger" aria-describedby="tooltip" class="fa-regular fa-circle-down"></i>
+                    </a>
+                </div>
+                <div id="tooltip" role="tooltip">
+                    Read about me
+                    <div id="arrow" data-popper-arrow></div>
+                </div>
 
-                <a href="#about" class="btn btn-lg main-btn">More</a>
             </div>
         </section>
+
 
         <!-- social media icons -->
         <div class="social-buttons">
@@ -162,7 +171,13 @@
                         </div>
                         <div id="coding-section" data-id="coding" class="bio-section ">
                             <h4>Coding:</h4>
-                            <p>I began learning to code by poring over a number of online resources for fun. It quickly became a serious pursuit as I found myself coding long hours and on weekends. My specialty is in front-end, but I am also interested in gaining more experience with the backend and hope to be able to build full applications from the ground up in the near future. Being self-taught has had a profound impact on my developer career, as I successfully honed my ability to teach myself new skills and stay up-to-date on the latest technologies.
+                            <p>I began learning to code by poring over a number of online resources for fun. It quickly
+                                became a serious pursuit as I found myself coding long hours and on weekends. My
+                                specialty is in front-end, but I am also interested in gaining more experience with the
+                                backend and hope to be able to build full applications from the ground up in the near
+                                future. Being self-taught has had a profound impact on my developer career, as I
+                                successfully honed my ability to teach myself new skills and stay up-to-date on the
+                                latest technologies.
 
                             </p>
 
@@ -174,7 +189,7 @@
                                 photos, and films, and my role involves crafting tools to improve public
                                 accessibility to these resources. Additionally, I am in charge of making changes
                                 to the website and implementing new features and technologies.
-                            
+
                                 This has been a unique challenge as the rest of my team comprises historians and
                                 archivists. As a result, I've learned to effectively bridge the gap between
                                 technology and historical preservation. </p>
@@ -195,7 +210,8 @@
                             <p>In addition to everything else, I like to stay busy and have a wide range of
                                 hobbies. I'm a dog lover and have an Australian Shepherd/Australian Cattle Dog
                                 mix. I'm also in to jogging, woodworking and sewing.
-                                Finally, I have a passion for traveling and experiencing different cultures around teh world and dream of exploring more soon.</p>
+                                Finally, I have a passion for traveling and experiencing different cultures around teh
+                                world and dream of exploring more soon.</p>
 
                         </div>
                     </div>
@@ -207,25 +223,29 @@
         </section>
 
         <!-- skills section-->
-        <section id="skills" class="background-2 py-4  ">
+        <section id="skills" class="background-2 py-4 py-md-5  ">
             <!-- skillset animation -->
             <div class="container-md ">
                 <div class=" display-5 ">
-                    <span>Current Skillset: </span>
-                    <div class="rw-words">
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Typescript</span>
-                        <span>jQuery</span>
-                        <span>Node</span>
-                        <span>Design</span>
-                        <span>PHP</span>
+                    <div
+                        class="skill-title-container d-flex flex-column justify-content-center flex-sm-row justify-content-sm-start  align-items-center mb-sm-4 mb-lg-5">
+                        <span class="">Current Skillset: </span>
+                        <div class="rw-words d-flex justify-content-center align-items-center justify-content-sm-start">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Typescript</span>
+                            <span>jQuery</span>
+                            <span>Node</span>
+                            <span>Design</span>
+                            <span>PHP</span>
+                        </div>
                     </div>
+
                 </div>
                 <!-- animated boxes -->
                 <!--hover boxes-->
-                <div class="mt-5 ">
-                    <div class="accordion" id="bio-accordion">
+                <div class="my-3 ">
+                    <div class="accordion " id="bio-accordion">
 
 
                         <div class="accordion-item">
@@ -272,7 +292,8 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    Having successfully completed a comprehensive course in TypeScript, I am able to leverage TypeScript across diverse
+                                    Having successfully completed a comprehensive course in TypeScript, I am able to
+                                    leverage TypeScript across diverse
                                     applications, including React. I understand fundamentals of type annotation,
                                     variables, functions, object types, array types, interfaces, classes, generics, and
                                     nuanced type narrowing techniques. Additionally, I am familiar with TypeScript's
@@ -291,7 +312,8 @@
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    I have a solid understanding of jQuery and often use it at my current position. I am particularly fond of it for basic event handling and effects. 
+                                    I have a solid understanding of jQuery and often use it at my current position. I am
+                                    particularly fond of it for basic event handling and effects.
                                 </div>
                             </div>
                         </div>
@@ -355,9 +377,9 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="background-1 py-4">
+        <section id="projects" class="background-1 py-4 py-md-5">
             <div class="container-lg d-flex flex-column">
-                <div class=" display-5 project-text mb-4">
+                <div class=" display-5 project-text mb-4 mb-lg-5">
                     <span>Projects: </span>
                 </div>
                 <div class="projects-main ">
@@ -409,19 +431,15 @@
                                         <div class="bio-text ">
                                             <h5>Project details:</h5>
                                             <p>Flourish is a custom accessibility menu created for the Florida Memory
-                                                website. This collaborative effort between my predecessor and me aims to
+                                                website using HTML, CSS, JavaScript and jQuery. This collaborative
+                                                effort
+                                                between my predecessor and me was the biggest project I've worked on to
+                                                date and it aims to
                                                 enhance the user experience for individuals facing disabilities that
                                                 impede their access to our site's content. The menu boasts customizable
                                                 options, allowing users to control how page content is presented. It
                                                 also incorporates a suite of tools to facilitate more effective content
-                                                access. Understanding the
-                                                diverse needs of potential users, including those who are visually
-                                                impaired, hard of hearing, rely on screen readers, or are color-blind,
-                                                posed a unique challenge. Throughout the development process, my ability
-                                                to comprehend and implement features for a diverse user base improved
-                                                significantly. Additionally, I gained extensive knowledge of web
-                                                accessibility standards, enabling me to construct websites and
-                                                applications with inclusivity in mind.
+                                                access.
                                             </p>
                                         </div>
 
@@ -461,7 +479,7 @@
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
-                                            <p>This is a command-line blackjack game built in TypeScript and powered by
+                                            <p>This is a command-line blackjack game built in TypeScript and
                                                 Node.js. The primary aim was to enhance my grasp of core JavaScript
                                                 fundamentals and delve into more intricate logic. Additionally, it
                                                 provided
@@ -483,14 +501,14 @@
                         <div class="images">
                             <img class="image-img" src="./img/react-movies.png" alt="react movie app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="image-title">React movie search</h4>
+                                <h4 class="image-title">React Movie Search</h4>
                                 <p class="image-description text-center">A rebuild of a movie search project using React
                                     and Typescript</p>
                                 <button value="More Details" class="project-description-btn">More
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://github.com/admaloch/react-movie-search" target="_blank"
+                                        <a href="https://adm-react-movies.netlify.app/" target="_blank"
                                             class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
@@ -500,7 +518,7 @@
                                         </a>
                                     </div>
                                     <div class="hover-wrapper wrapper-2">
-                                        <a href="https://adm-react-movies.netlify.app/" target="_blank" class="cta ">
+                                        <a href="https://github.com/admaloch/react-movie-search" target="_blank" class="cta ">
                                             <span>Github</span>
                                             <svg viewBox="0 0 13 10">
                                                 <path d="M1,5 L11,5"></path>
@@ -516,18 +534,14 @@
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
-                                            <p>This project is a reconstruction of a movie search app project initially
-                                                developed with vanilla JS. It allows the user to search for movies, TV
-                                                shows, or both, utilizing movie data from the OMDB API. The primary goal
+                                            <p>This project is a React rebuild of a movie search app initially
+                                                built with vanilla JS. Since the base code was already complete, the
+                                                primary goal
                                                 of
-                                                this project was to practice my React and TypeScript skills. Since the
-                                                core
-                                                of the project was already completed in the original app, this rebuild
-                                                presented an excellent opportunity to solely focus on implementing React
-                                                concepts effectively and adopting best practices for state management
-                                                and
-                                                component structuring. In addition. it helped me solidify usage of more
-                                                complex hooks such as useReducer and Context API.
+                                                this project was to practice my React and TypeScript skills, and
+                                                solidify my comfort with component structuring, state management, and more
+                                                advanced react hooks such as useReducer, useMemo, portals and the
+                                                context api.
                                             </p>
                                         </div>
 
@@ -543,13 +557,13 @@
                         <div class="images">
                             <img class="image-img" src="./img/movie-js.png" alt="javascript movie app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="image-title">Javascript movie search</h4>
+                                <h4 class="image-title">Javascript Movie Search</h4>
                                 <p class="image-description text-center">A movie search app built using OMDB API</p>
                                 <button value="More Details" class="project-description-btn">More
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://github.com/admaloch/js-movie-search" target="_blank"
+                                        <a href="https://admaloch.github.io/js-movie-search/" target="_blank"
                                             class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
@@ -559,7 +573,7 @@
                                         </a>
                                     </div>
                                     <div class="hover-wrapper wrapper-2">
-                                        <a href="https://admaloch.github.io/js-movie-search/" target="_blank"
+                                        <a href="https://github.com/admaloch/js-movie-search" target="_blank"
                                             class="cta ">
                                             <span>Github</span>
                                             <svg viewBox="0 0 13 10">
@@ -580,7 +594,7 @@
                                                 search
                                                 for movies, TV shows, or both. The movie data is sourced from the OMDB
                                                 API.
-                                                This project allowd me to gain hands on experience working with
+                                                This project allowed me to gain hands on experience working with
                                                 asynchronous
                                                 JavaScript and APIs in addition to deepening my understanding of related
                                                 concepts such as working with promises, the call stack, and the
@@ -602,14 +616,14 @@
                         <div class="images">
                             <img class="image-img" src="./img/img-slider.png" alt="folk fest image slider screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="image-title">Florida Folk festival image display</h4>
+                                <h4 class="image-title">Florida Folk Festival Image Display</h4>
                                 <p class="image-description text-center">An image slider display with an audio player
                                     and image based QR codes.</p>
                                 <button value="More Details" class="project-description-btn">More
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://github.com/admaloch-dos/folk-fest-img-display" target="_blank"
+                                        <a href="https://folk-fest-image-display.netlify.app/" target="_blank"
                                             class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
@@ -619,7 +633,7 @@
                                         </a>
                                     </div>
                                     <div class="hover-wrapper wrapper-2">
-                                        <a href="https://folk-fest-image-display.netlify.app/" target="_blank"
+                                        <a href="https://github.com/admaloch-dos/folk-fest-img-display" target="_blank"
                                             class="cta ">
                                             <span>Github</span>
                                             <svg viewBox="0 0 13 10">
@@ -636,18 +650,13 @@
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
-                                            <p>This image display was created to be showcased at the annual Florida Folk
-                                                Festival. It contains over 1000 photographs, handpicked by our photo lab
-                                                staff, and an audio player with music from the Florida Memory audio
-                                                collection. The project was created with a Bootstrap image carousel but
+                                            <p>This image display was built with HTML, CSS, JavaScript and Bootstrap, and was created to be showcased at the annual Florida Folk
+                                                Festival. It contains over 1000 photographs, an audio player with music from the Florida Memory audio
+                                                collection and custom QR codes that re-generate with each image and contain links to individual item pages. The image slider uses a Bootstrap image carousel but
                                                 with
                                                 more customizable features added to allow the user more control over
                                                 speed,
-                                                transition effects, etc. In addition, QR codes are generated for each
-                                                image
-                                                that link to an item page on the Florida Memory website. The user can
-                                                select
-                                                between a regular QR code and a code with the current image embedded.
+                                                transition effects, qr-code image etc. 
                                             </p>
                                         </div>
 
@@ -663,7 +672,7 @@
                         <div class="images">
                             <img class="image-img" src="./img/countytimeline.png" alt="Florid county tool screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="image-title">Florida county research tool</h4>
+                                <h4 class="image-title">Florida County Research Tool</h4>
                                 <p class="image-description text-center">A Florida county history search tool built for
                                     the Florida Memory website
 
@@ -672,7 +681,7 @@
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://github.com/admaloch-dos/florida-county-timeline-tool"
+                                        <a href="https://admaloch-dos.github.io/florida-county-timeline-tool/"
                                             target="_blank" class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
@@ -682,7 +691,7 @@
                                         </a>
                                     </div>
                                     <div class="hover-wrapper wrapper-2">
-                                        <a href="https://admaloch-dos.github.io/florida-county-timeline-tool/"
+                                        <a href="https://github.com/admaloch-dos/florida-county-timeline-tool"
                                             target="_blank" class="cta ">
                                             <span>Github</span>
                                             <svg viewBox="0 0 13 10">
@@ -700,27 +709,17 @@
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
                                             <p>This is a Florida county history research tool, informally referred to as
-                                                "When it was Where," built to assist the State Archives of Florida
+                                                "When It Was Where," built to assist the State Archives of Florida
                                                 reference
                                                 room staff. Patrons often request information about the history and
                                                 timeline
-                                                of certain counties in Florida and need to sift through numerous old
-                                                maps
-                                                and documents to find what they are looking for. The goal was to combine
+                                                of certain counties in Florida so we decided to combine
                                                 our
                                                 collection of maps and county database information into an interactive
                                                 tool,
                                                 streamlining the research process and saving valuable time for both
                                                 patrons
-                                                and archive staff. The biggest challenge in this project was devising an
-                                                effective method to integrate disparate maps, data, and documents that
-                                                didn't always align logically. The resulting tool allows users to select
-                                                any
-                                                modern county, explore its complete timeline, and search by year to
-                                                filter
-                                                timeline information, revealing a map depicting how the chosen county
-                                                and
-                                                the rest of Florida appeared at that time.
+                                                and archive staff. 
                                             </p>
                                         </div>
 
@@ -745,7 +744,7 @@
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://github.com/admaloch-dos/governors-letter-books" target="_blank"
+                                        <a href="https://admaloch-dos.github.io/governors-letter-books/" target="_blank"
                                             class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
@@ -755,7 +754,7 @@
                                         </a>
                                     </div>
                                     <div class="hover-wrapper wrapper-2">
-                                        <a href="https://admaloch-dos.github.io/governors-letter-books/" target="_blank"
+                                        <a href="https://github.com/admaloch-dos/governors-letter-books" target="_blank"
                                             class="cta ">
                                             <span>Github</span>
                                             <svg viewBox="0 0 13 10">
@@ -775,23 +774,13 @@
                                             <p>This was the first project I completed at Florida Memory. This is a
                                                 simple
                                                 research tool built to assist patrons of The State Archives of Florida
-                                                reference room. The archives have scans of Florida Governor Richard K.
-                                                Call's letterbooks that are often requested by historians who are
+                                                reference room. The archives have scans of Florida Governors' letterbooks that are often requested by historians who are
                                                 studying
                                                 Florida history. The intent of this project was to build a simple
                                                 JavaScript
                                                 tool that can grab the links to these images and organize them so they
                                                 can
-                                                be more easily viewed and downloaded. It is now hosted locally on the
-                                                computers in the reference room. The images were digitized into 32
-                                                separate
-                                                volumes based on the date written, and then loaded onto our server
-                                                resulting
-                                                in over 30,000 images. The most difficult part of this project was
-                                                determining how to present these without loading thousands of images at
-                                                once. I ended up creating an image slider that loads a new set of images
-                                                on
-                                                arrow click.
+                                                be more easily viewed and downloaded. 
                                             </p>
                                         </div>
 
@@ -817,7 +806,7 @@
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://github.com/admaloch-dos/folk-festival-programs" target="_blank"
+                                        <a href="https://admaloch-dos.github.io/folk-festival-programs/" target="_blank"
                                             class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
@@ -827,7 +816,7 @@
                                         </a>
                                     </div>
                                     <div class="hover-wrapper wrapper-2">
-                                        <a href="https://admaloch-dos.github.io/folk-festival-programs/" target="_blank"
+                                        <a href="https://github.com/admaloch-dos/folk-festival-programs" target="_blank"
                                             class="cta ">
                                             <span>Github</span>
                                             <svg viewBox="0 0 13 10">
@@ -852,13 +841,7 @@
                                                 navigation
                                                 challenges, prompting a new approach to the design. While considered a
                                                 relatively straightforward project, it served as a valuable exercise in
-                                                problem-solving. Given the festival's extensive history, spanning back
-                                                to
-                                                the 1950s, the most natural layout was to orgnize by decades. Despite
-                                                multiple approaches available, we kept it simple with an accordion
-                                                layout.
-                                                Notably, we did not use Bootstrap for the accordion, as it is an older
-                                                version of bootstrap with a jenky accordion.
+                                                problem-solving.
                                             </p>
                                         </div>
 
@@ -888,7 +871,7 @@
         </div>
 
         <!-- Contact section -->
-        <section id="contact" class="background-2 py-4">
+        <section id="contact" class="background-2 py-4 py-md-5">
             <div class="container-md">
                 <div class=" display-5">
                     <span>Contact me: </span>
@@ -953,7 +936,7 @@
 
                 </div>
                 <div class="button-container d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn contact-btn my-2">
+                    <button type="button" class="btn contact-btn my-2 my-md-4 my-lg-5">
                         Email Me
                     </button>
                 </div>
@@ -965,25 +948,24 @@
 
             <div class="form">
                 <div class="email-contact-info closediv">
-                    <h3 class="form-title">Let's get in touch</h3>
-                    <p class="form-text">Feel free to contact anytime and I'll get back as soon as I can.
-                    </p>
+                    <h4 class="form-text">Feel free to contact anytime and I'll get back as soon as I can.
+                    </h4>
                     <div class="info">
                         <div class="information">
-                            <img src="./img/location.png" alt="location icon" class="info-icon">
+                            <i class="fa-solid fa-house info-icon" aria-hidden="true" alt="location icon" class="info-icon"></i>
                             <p>2775 Gerald Dr. Tallahasee Fl. 32310</p>
                         </div>
                         <div class="information">
-                            <img src="./img/email.png" alt="email icon" class="info-icon">
+                            <i class="fa fa-envelope info-icon"></i>
                             <p>Admaloch91@gmail.com</p>
                         </div>
                         <div class="information">
-                            <img src="./img/phone.png" alt="phone icon" class="info-icon">
+                            <i class="fa-solid fa-phone info-icon" alt="phone icon"></i>
                             <p>678-687-8222</p>
                         </div>
                     </div>
                     <div class="modal-social-media">
-                        <p>Get Connected</p>
+                        
                         <div class="modal-icon">
                             <a href="https://www.facebook.com/davis.maloch" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
@@ -998,9 +980,7 @@
                     </div>
                 </div>
                 <div class="email-contact-form">
-                    <span class="circle one"></span>
-                    <span class="circle two"></span>
-                    <form class="email-form" action="index.htmle">
+                    <form class="email-form" action="index.html">
                         <h3 class="email-title">Send me a message</h3>
                         <div class="input-container ">
                             <input type="text" name="name" class="contact-input">
@@ -1055,9 +1035,7 @@
     <!-- JS files -->
     <!-- popper/jquery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"

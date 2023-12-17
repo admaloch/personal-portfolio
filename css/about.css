@@ -29,9 +29,14 @@ letter-spacing: 0px;
     opacity: 1;
 }
 
+@media screen and (min-width: 576px) {
+    .bio-btn {
+        padding: .5rem 3rem;
+    }
+}
 @media screen and (min-width: 768px) {
     .bio-btn {
-        padding: .7rem 4rem;
+        padding: .8rem 4rem;
     }
 }
 

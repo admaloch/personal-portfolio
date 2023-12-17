@@ -21,7 +21,7 @@
     height: 100%;
     width: 100%;
     max-width: 820px;
-    background-color: #fff;
+    background-color: #f8edeb;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -32,37 +32,17 @@
 }
 
 .email-contact-form {
-    background-color: #1abc9c;
+    background-color: #003459;
     position: relative;
 }
 
-.circle {
-
-    border-radius: 50%;
-    background: linear-gradient(135deg, transparent 20%, #149279);
-    position: absolute;
-}
-
-.circle.one {
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-}
-
-.circle.two {
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
-}
 
 .email-contact-form:before {
     content: '';
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: #1abc9c;
+    background-color: #003459;
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -76,7 +56,7 @@
 }
 
 .email-title {
-    color: #fff;
+    color: #f8edeb;
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 0.7rem;
@@ -94,7 +74,7 @@
     border: 2px solid #fafafa;
     background: none;
     padding: 0.6rem 1.2rem;
-    color: #fff;
+    color: #f8edeb;
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
@@ -137,10 +117,10 @@
 
 .email-btn {
     padding: 0.6rem 1.3rem;
-    background-color: #fff;
+    background-color: #f8edeb;
     border: 2px solid #fafafa;
     font-size: 0.95rem;
-    columns: #1abc9c;
+    columns: #003459;
     border-radius: 25px;
     line-height: 1;
     outline: none;
@@ -152,7 +132,7 @@
 
 .email-btn:hover {
     background-color: transparent;
-    color: #fff;
+    color: #f8edeb;
 }
 
 .input-container span {
@@ -177,7 +157,7 @@
     opacity: 0;
     transition: .3s;
     height: 5px;
-    background-color: #1abc9c;
+    background-color: #003459;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -208,21 +188,24 @@
     position: relative;
     letter-spacing: .1rem;
 }
+x
 
 .form-title {
-    color: #1abc9c;
+    color: #003459;
 }
 
 .form-text {
-    color: #333;
-    margin: 1.5rem 0 2rem;
+    color: #003459;
+    margin: .2rem 0 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .information {
 
     display: flex;
 
-    color: #555;
+    color: #003459;
     margin: 0.7rem 0;
     align-items: center;
     font-size: .9rem;
@@ -243,7 +226,7 @@
 }
 
 .modal-social-media p {
-    color: #333;
+    color: #003459;
 }
 
 .modal-icon {
@@ -255,8 +238,8 @@
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #1abc9c, #149279);
-    color: #fff;
+    background-color:  #003459;
+    color: #f8edeb;
     text-align: center;
     line-height: 35px;
     margin-right: 0.5rem;
@@ -267,27 +250,8 @@
     transform: scale(1.05);
 }
 
-.email-contact-info:before {
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 140px;
-    border: #1abc9c solid 22px;
-    border-radius: 50%;
-    bottom: -77px;
-    right: 50px;
-    opacity: .3;
-}
 
-.big-circle {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #1cd4af, #159b80);
-    bottom: 50%;
-    right: 50%;
-}
+
 
 @media (max-width: 768px) {
     .form {
@@ -366,4 +330,25 @@
         padding: 3rem .5rem;
     }
     
+}
+
+@media screen and (min-width:768px){
+    .email-contact-info {
+        padding: 2.3rem .5rem;
+    }
+    .form-text {
+        margin: 4rem 0 2rem;
+        font-size: 1.3rem;
+    }
+    .email-title {
+        margin-top: 2rem;
+    }
+    .form{
+        height: 80%;
+    }
+}
+@media screen and (min-width:992px){
+    .email-contact-info {
+        padding: 2.3rem 2.2rem;
+    }
 }
