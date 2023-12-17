@@ -2,30 +2,63 @@
     padding-bottom: 2em;
 }
 
+#bio-accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #bio-accordion .accordion-item {
-    border-radius: 0; /* Remove border radius on accordion items */
-    margin: 1rem 0;
-    
+    border-radius: 0;
+    margin: .5rem 0;
+    width: 100%;
+    max-width: 900px;
+
+}
+
+#bio-accordion .accordion-header {
+    border-top: #f8edeb solid 1px;
+
+}
+
+#bio-accordion .accordion-item:nth-of-type(1) .accordion-header {
+    border-top: none;
 }
 
 #bio-accordion .accordion-header button {
     background-color: #003459;
     color: #f8edeb;
     border-radius: 0;
+    height: 50px;
 }
 
-#bio-accordion .accordion-header button:hover {
-    background-color: #f8edeb;
-    color: #003459;
+@media screen and (min-width:768px) {
+    #bio-accordion .accordion-header button {
+        height: 60px;
+    }
 }
 
+@media screen and (min-width:992px) {
+    #bio-accordion .accordion-header button {
+        height: 70px;
+    }
+
+
+}
+
+@media screen and (min-width:1300px) {
+    #bio-accordion .accordion-header button {
+        height: 80px;
+    }
+
+
+}
+
+#bio-accordion .accordion-header button:active,
 #bio-accordion .accordion-header button:focus {
-    box-shadow: none; /* Remove the focus glow */
-}
-
-#bio-accordion .accordion-header button:active {
-    background-color: #f8edeb;
-    color: #003459;
+    box-shadow: none;
 }
 
 #bio-accordion .accordion-body {
@@ -33,21 +66,77 @@
     color: #003459;
 }
 
+#bio-accordion .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f8edeb'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    transition: .25s ease-in-out all;
+}
+
+#bio-accordion .accordion-header:hover .accordion-button:after,
+#bio-accordion .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23003459'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+#bio-accordion .accordion-header button:hover,
+#bio-accordion .accordion-button:not(.collapsed) {
+    background-color: #f8edeb;
+    color: #003459;
+}
+
+
+
+
 
 /*skills text*/
 .rw-words {
-    display: inline;
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 10px; */
+    width: 100%;
+    position: relative;
+    top: 3rem;
+}
+
+@media screen and (min-width:576px) {
+    .rw-words {
+        justify-content: start;
+        top: 1rem;
+        left: 18.6rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .rw-words {
+        justify-content: start;
+        top: .85rem;
+        left: 19.5rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .rw-words {
+        justify-content: start;
+        top: -.1rem;
+        left: 26rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .rw-words {
+        justify-content: start;
+        top: -.4rem;
+        left: 28rem;
+    }
 }
 
 .rw-words span {
     position: absolute;
     opacity: 0;
     overflow: hidden;
-    color: #fcf6bd;
-    -webkit-animation: rotateWord 12s linear infinite 0s;
-    -ms-animation: rotateWord 12s linear infinite 0s;
-    animation: rotateWord 12s linear infinite 0s;
+    color: #b9fbc0;
+    -webkit-animation: rotateWord 21s linear infinite 0s;
+    -ms-animation: rotateWord 21s linear infinite 0s;
+    animation: rotateWord 21s linear infinite 0s;
     height: 100px;
 }
 
@@ -55,21 +144,49 @@
     -webkit-animation-delay: 3s;
     -ms-animation-delay: 3s;
     animation-delay: 3s;
-    color: #d0f4de;
+    color: #ffcfd2;
 }
 
 .rw-words span:nth-child(3) {
     -webkit-animation-delay: 6s;
     -ms-animation-delay: 6s;
     animation-delay: 6s;
-    color: #a9def9;
+    color: #90dbf4;
 }
 
 .rw-words span:nth-child(4) {
     -webkit-animation-delay: 9s;
     -ms-animation-delay: 9s;
     animation-delay: 9s;
-    color: #e4c1f9;
+    color: #a3c4f3;
+}
+
+.rw-words span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+    color: #cfbaf0;
+}
+
+.rw-words span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+    color: #ffcfd2;
+}
+
+.rw-words span:nth-child(7) {
+    -webkit-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+    color: #fbf8cc;
+}
+
+.rw-words span:nth-child(8) {
+    -webkit-animation-delay: 21s;
+    -ms-animation-delay: 21s;
+    animation-delay: 21s;
+    color: #ffc8dd;
 }
 
 @-webkit-keyframes rotateWord {
@@ -360,112 +477,4 @@
 
 .h2midstyle {
     color: black;
-}
-
-@media (max-width: 768px) {
-    #skills {
-        height: 850px;
-    }
-
-    .view {
-        margin: 0;
-    }
-}
-
-@media (max-width: 576px) {
-    #skills {
-        height: 1100px;
-    }
-
-    .view {
-        margin: 0;
-    }
-
-    .skills-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .view {
-        margin: .3em;
-        height: 200px;
-        max-width: 400px;
-        width: 70%;
-    }
-
-    .view img {
-        min-height: 200px;
-    }
-
-    .skill-info {
-        justify-content: flex-start !important;
-    }
-
-    .view h2 {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-        background: transparent;
-        margin: 20px 40px 0px 40px;
-        transform: scale(0);
-        color: #333;
-        transition: all 0.5s linear;
-        opacity: 0;
-        font-size: .9rem;
-        letter-spacing: 5px;
-    }
-
-    .view p {
-        color: #333;
-        opacity: 0;
-        transform: scale(0);
-        transition: all 0.5s linear;
-        font-size: .7rem;
-    }
-
-    #skills .display-5 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .rw-words {
-        display: block;
-        text-align: left;
-        height: 30px;
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    #skills {
-        height: 1050px;
-    }
-
-    .skill-info {
-        width: 100%;
-    }
-
-    .skill-info h2 {
-        font-size: .7em;
-    }
-
-    .skill-info p {
-        font-size: .6em;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .rw-sentence {
-        font-size: 9px;
-    }
-
-    .skill-info h2 {
-        font-size: .6em;
-    }
-
-    .skill-info p {
-        font-size: .5em;
-    }
 }

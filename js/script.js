@@ -71,11 +71,11 @@ bioBtns.forEach(btn => {
         bioBtns.forEach(items => items.classList.remove('active'))
         btn.classList.add('active')
         document.querySelectorAll('.bio-section').forEach(bio => {
-            console.log(btnDataId)
+
             const bioDataId = bio.getAttribute('data-id')
 
             if (btnDataId === bioDataId) {
-                $(`.bio-section[data-id=${bioDataId}]`).fadeIn('slow');
+                $(`.bio-section[data-id=${bioDataId}]`).css("display", "flex").hide().fadeIn();
             } else {
 
                 bio.style.display = 'none'
@@ -108,38 +108,34 @@ navLinks.forEach((l) => {
 
 // project section -- reveal info on button click
 
-const projectButton = document.querySelectorAll('.project-description-btn')
-const projectInfo = document.querySelectorAll('.project-info')
+const projectButtons = document.querySelectorAll('.project-description-btn');
 
-projectButton.forEach(button => {
-    button.addEventListener('click', () => {
-        projectInfo.forEach(info => {
-            info.classList.toggle('project-info-appear')
-            info.scrollTop = 0;
-        })
-    })
-})
-
-// reset details after mouse leaves project box
-const imageOverlay = document.querySelectorAll('.image-overlay')
-imageOverlay.forEach(overlay => {
-    overlay.addEventListener('mouseleave', () => {
-        projectInfo.forEach(info => {
-            info.classList.remove('project-info-appear')
-            info.scrollTop = 0;
-        })
-    })
-})
-// reset details after mouse leaves project box
-const closeProjectBio = document.querySelectorAll('.close-project-bio')
-closeProjectBio.forEach(btn => {
+projectButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-        projectInfo.forEach(info => {
-            info.classList.remove('project-info-appear')
-            info.scrollTop = 0;
+        const projectInfoOverlay = btn.closest('.image-overlay').querySelector('.project-info')
+        const closeBioIcon = projectInfoOverlay.querySelector('.close-project-bio')
+        const biotext = projectInfoOverlay.querySelector('.bio-text')
+        projectInfoOverlay.classList.add('project-info-appear')
+        closeBioIcon.addEventListener('click', () => {
+            projectInfoOverlay.classList.remove('project-info-appear')
+            scrollItemToTop(biotext)
         })
-    })
+        projectInfoOverlay.addEventListener('mouseleave', () => {
+            projectInfoOverlay.classList.remove('project-info-appear')
+            scrollItemToTop(biotext)
+        })
+    });
 })
+
+
+const scrollItemToTop = (item) => {
+    item.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
 
 // contact section hover over bubble to make modal info appear
 // change opacity of all contact bubbles to zero on hover
@@ -156,17 +152,6 @@ function classToggle(evt, find, toggle) {
         a.classList[evt.type === 'mouseover' ? 'add' : 'remove'](toggle);
     });
 }
-
-// for (let i = 0; i < bubbleContainer.length; i++) {
-//     contactBubbles[i].addEventListener('mouseover', function (e) {
-//         classToggle(e, 'bubble-container', 'remove-opacity');
-//         classToggle(e, 'contact-info', 'text-dark');
-//     });
-//     contactBubbles[i].addEventListener('mouseout', function (e) {
-//         classToggle(e, 'bubble-container', 'remove-opacity');
-//         classToggle(e, 'contact-info', 'text-dark');
-//     });
-// }
 
 //bring in  hover modal and overlay
 contactBubbles.forEach((contacts) => {
