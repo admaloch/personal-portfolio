@@ -1,19 +1,18 @@
 // main loading animation
-// const loader = document.querySelector('.loader');
-// const main = document.querySelector('#main')
+const loader = document.querySelector('.loader');
+const main = document.querySelector('#main')
 
-// function init() {
-//     setTimeout(() => {
-//         loader.style.opacity = 0;
-//         loader.style.display = 'none';
-//         main.style.display = 'block'
-//         setTimeout(() => main.style.opacity = 100, 50)
-//     }, 1500)
-// }
-// init();
+function init() {
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+        main.style.display = 'block'
+        setTimeout(() => main.style.opacity = 100, 50)
+    }, 1500)
+}
+init();
 
-// const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-// const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
 
 const button = document.querySelector('#arrow-scroll-trigger');
       const tooltip = document.querySelector('#tooltip');
@@ -72,7 +71,7 @@ const button = document.querySelector('#arrow-scroll-trigger');
       });
 
 
-      
+
 function fadeIn(item) {
     item.style.opacity = 100;
 }

@@ -58,7 +58,7 @@
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.48); */
     transition: all .5s;
     /* transform: scale(1.2); */
-    border: #003459 solid 2px;
+    border: var(--dark-blue) solid 2px;
     height: 300px;
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.36);
     border-radius: 5px;

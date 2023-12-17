@@ -4,7 +4,7 @@
 
 #bio-accordion {
     width: 100%;
-letter-spacing: 0px;
+    letter-spacing: 0px;
     padding: 0 1rem;
 }
 
@@ -14,14 +14,14 @@ letter-spacing: 0px;
 
 .bio-btn {
     /* margin: .3rem 1rem .3rem 0; */
-    border: #003459 solid 3px;
+    border: var(--dark-blue) solid 3px;
     padding: .5rem 0rem;
     opacity: .6;
     /* min-width: 210px; */
     text-align: center;
-    background-color: #003459;
-    color: #f8edeb;
-    border: #f8edeb solid 2px;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    border: var(--off-white) solid 2px;
     cursor: pointer;
     transition: .2s ease-in-out all;
     font-family: var(--font1);
@@ -37,6 +37,7 @@ letter-spacing: 0px;
         padding: .5rem 3rem;
     }
 }
+
 @media screen and (min-width: 768px) {
     .bio-btn {
         padding: .8rem 4rem;

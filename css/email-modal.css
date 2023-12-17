@@ -21,7 +21,7 @@
     height: 100%;
     width: 100%;
     max-width: 820px;
-    background-color: #f8edeb;
+    background-color: var(--off-white);
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -32,7 +32,7 @@
 }
 
 .email-contact-form {
-    background-color: #003459;
+    background-color: var(--dark-blue);
     position: relative;
 }
 
@@ -42,7 +42,7 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: #003459;
+    background-color: var(--dark-blue);
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -56,7 +56,7 @@
 }
 
 .email-title {
-    color: #f8edeb;
+    color: var(--off-white);
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 0.7rem;
@@ -74,7 +74,7 @@
     border: 2px solid #fafafa;
     background: none;
     padding: 0.6rem 1.2rem;
-    color: #f8edeb;
+    color: var(--off-white);
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
@@ -117,10 +117,10 @@
 
 .email-btn {
     padding: 0.6rem 1.3rem;
-    background-color: #f8edeb;
+    background-color: var(--off-white);
     border: 2px solid #fafafa;
     font-size: 0.95rem;
-    columns: #003459;
+    columns: var(--dark-blue);
     border-radius: 25px;
     line-height: 1;
     outline: none;
@@ -132,7 +132,7 @@
 
 .email-btn:hover {
     background-color: transparent;
-    color: #f8edeb;
+    color: var(--off-white);
 }
 
 .input-container span {
@@ -157,7 +157,7 @@
     opacity: 0;
     transition: .3s;
     height: 5px;
-    background-color: #003459;
+    background-color: var(--dark-blue);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -188,14 +188,13 @@
     position: relative;
     letter-spacing: .1rem;
 }
-x
 
-.form-title {
-    color: #003459;
+x .form-title {
+    color: var(--dark-blue);
 }
 
 .form-text {
-    color: #003459;
+    color: var(--dark-blue);
     margin: .2rem 0 2rem;
     font-size: 1.3rem;
     font-weight: bold;
@@ -205,7 +204,7 @@ x
 
     display: flex;
 
-    color: #003459;
+    color: var(--dark-blue);
     margin: 0.7rem 0;
     align-items: center;
     font-size: .9rem;
@@ -226,7 +225,7 @@ x
 }
 
 .modal-social-media p {
-    color: #003459;
+    color: var(--dark-blue);
 }
 
 .modal-icon {
@@ -238,8 +237,8 @@ x
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background-color:  #003459;
-    color: #f8edeb;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
     text-align: center;
     line-height: 35px;
     margin-right: 0.5rem;
@@ -265,7 +264,7 @@ x
 }
 
 @media (max-width: 500px) {
-    
+
 
     .modal-bg {
         padding: 2rem .5rem;
@@ -329,25 +328,29 @@ x
     .modal-bg {
         padding: 3rem .5rem;
     }
-    
+
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
     .email-contact-info {
         padding: 2.3rem .5rem;
     }
+
     .form-text {
         margin: 4rem 0 2rem;
         font-size: 1.3rem;
     }
+
     .email-title {
         margin-top: 2rem;
     }
-    .form{
+
+    .form {
         height: 80%;
     }
 }
-@media screen and (min-width:992px){
+
+@media screen and (min-width:992px) {
     .email-contact-info {
         padding: 2.3rem 2.2rem;
     }

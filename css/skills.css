@@ -21,7 +21,7 @@
 
 
 #bio-accordion .accordion-header {
-    border-top: #f8edeb solid 1px;
+    border-top: var(--off-white) solid 1px;
 
 }
 
@@ -30,8 +30,8 @@
 }
 
 #bio-accordion .accordion-header button {
-    background-color: #003459;
-    color: #f8edeb;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
     border-radius: 0;
     height: 50px;
 }
@@ -66,8 +66,8 @@
 }
 
 #bio-accordion .accordion-body {
-    background-color: #f8edeb;
-    color: #003459;
+    background-color: var(--off-white);
+    color: var(--dark-blue);
     font-family: var(--font3);
 }
 
@@ -83,8 +83,8 @@
 
 #bio-accordion .accordion-header button:hover,
 #bio-accordion .accordion-button:not(.collapsed) {
-    background-color: #f8edeb;
-    color: #003459;
+    background-color: var(--off-white);
+    color: var(--dark-blue);
 }
 
 
