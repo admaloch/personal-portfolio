@@ -28,6 +28,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    min-height: 95vh;
 
 }
 
@@ -346,7 +347,7 @@ x .form-title {
     }
 
     .form {
-        height: 80%;
+        height: 90%;
     }
 }
 

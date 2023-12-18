@@ -63,8 +63,8 @@
     padding: 1rem;
     margin: 0 auto;
     overflow-y: scroll;
-    /* height: 400px; */
-    /* margin-top: 1rem; */
+    max-height: 420px;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -78,6 +78,12 @@
 @media screen and (min-width: 576px) {
     .bio-section {
         padding: 1rem 4rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .bio-section {
+        max-height: none;
+        /* height: 450px; */
     }
 }
 
