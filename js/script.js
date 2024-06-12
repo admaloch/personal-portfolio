@@ -2,7 +2,7 @@
 AOS.init({})
 
 // loading animation
-// fadeLoadingAnimation();
+fadeLoadingAnimation();
 
 // tooltips/popovers etc..
 showEvents.forEach((event) => {
