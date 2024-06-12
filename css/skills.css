@@ -1,5 +1,9 @@
 #skills {
-    padding-bottom: 2em;
+    position: relative;
+}
+
+#skills .container-md * {
+    z-index: 1;
 }
 
 #bio-accordion {
@@ -8,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 #bio-accordion .accordion-item {
@@ -15,7 +20,7 @@
     margin: .3rem 0;
     width: 100%;
     max-width: 900px;
-
+    z-index: 1;
 }
 
 
@@ -29,36 +34,22 @@
     border-top: none;
 }
 
+
+
 #bio-accordion .accordion-header button {
-    background-color: var(--dark-blue);
+    background: var(--main-gradiant-1);
+    background: var(--main-gradiant-2);
     color: var(--off-white);
     border-radius: 0;
-    height: 50px;
+    height: 40px;
 }
 
-
-
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     #bio-accordion .accordion-header button {
-        height: 60px;
+        height: 50px;
     }
 }
 
-@media screen and (min-width:992px) {
-    #bio-accordion .accordion-header button {
-        height: 70px;
-    }
-
-
-}
-
-@media screen and (min-width:1300px) {
-    #bio-accordion .accordion-header button {
-        height: 80px;
-    }
-
-
-}
 
 #bio-accordion .accordion-header button:active,
 #bio-accordion .accordion-header button:focus {
@@ -66,7 +57,8 @@
 }
 
 #bio-accordion .accordion-body {
-    background-color: var(--off-white);
+    background: var(--2nd-gradiant-1);
+    background: var(--2nd-gradiant-2);
     color: var(--dark-blue);
     font-family: var(--font3);
 }
@@ -83,7 +75,8 @@
 
 #bio-accordion .accordion-header button:hover,
 #bio-accordion .accordion-button:not(.collapsed) {
-    background-color: var(--off-white);
+    background: var(--2nd-gradiant-1);
+    background: var(--2nd-gradiant-2);
     color: var(--dark-blue);
 }
 
@@ -133,9 +126,7 @@
 @media screen and (min-width:1200px) {
     .rw-words {
         bottom: 1rem;
-
     }
-
 }
 
 .rw-words span {
@@ -198,6 +189,54 @@
     animation-delay: 21s;
     color: #ffc8dd;
 }
+
+
+/* .rw-words span:nth-child(9) {
+    -webkit-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+    color: #ffc8dd;
+} */
+
+/* .rw-words span:nth-child(10) {
+    -webkit-animation-delay: 27s;
+    -ms-animation-delay: 27s;
+    animation-delay: 27s;
+    color: #ffc8dd;
+}
+.rw-words span:nth-child(11) {
+    -webkit-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+    color: #ffc8dd;
+}
+.rw-words span:nth-child(12) {
+    -webkit-animation-delay: 33s;
+    -ms-animation-delay: 33s;
+    animation-delay: 33s;
+    color: #ffc8dd;
+}
+.rw-words span:nth-child(13) {
+    -webkit-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s;
+    color: #ffc8dd;
+}
+.rw-words span:nth-child(14) {
+    -webkit-animation-delay: 39s;
+    -ms-animation-delay: 39s;
+    animation-delay: 39s;
+    color: #ffc8dd;
+}
+.rw-words span:nth-child(15) {
+    -webkit-animation-delay: 42s;
+    -ms-animation-delay: 42s;
+    animation-delay: 42s;
+    color: #ffc8dd;
+} */
+
+
+
 
 @-webkit-keyframes rotateWord {
     0% {

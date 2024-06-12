@@ -15,10 +15,14 @@
     <!-- font link for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- normalize -->
-    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- main css -->
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/social-media.css">
@@ -31,6 +35,7 @@
     <link rel="stylesheet" href="./css/email-modal.css">
     <link rel="stylesheet" href="./css/loading-animation.css">
     <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/background-shapes.css">
 
 </head>
 
@@ -67,19 +72,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul id="nav-ul"
                         class="navbar-nav nav-fill nav-style d-flex justify-content-between align-items-center ">
-                        <li class="nav-item">
+                        <li data-aos-delay="1900" data-aos-duration="1300" data-aos="fade-right" class="nav-item">
                             <a href="#home" class="nav-link text-style">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-aos-delay="1900" data-aos-duration="1300" data-aos="fade-right" class="nav-item">
                             <a href="#about" class="nav-link text-style">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-aos-delay="1900" data-aos-duration="1300" data-aos="zoom-in" class="nav-item">
                             <a href="#skills" class="nav-link text-style">Skills</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-aos-delay="1900" data-aos-duration="1300" data-aos="fade-left" class="nav-item">
                             <a href="#projects" class="nav-link text-style">Projects</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-aos-delay="1900" data-aos-duration="1300" data-aos="fade-left" class="nav-item">
                             <a href="#contact" class="nav-link text-style">Contact</a>
                         </li>
                     </ul>
@@ -90,12 +95,16 @@
         <!-- Banner Image -->
         <section id="home" class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center mb-0">
             <div class="content text-center ">
-                <h1 class=" display-1 mb-1 main-text">Davis Maloch</h1>
-                <h2 class=" display-4 main-text">Self taught Developer</h2>
-                <h2 class=" display-4 main-text">Tallahassee Florida</h2>
+                <h1 data-aos-delay="1900" data-aos-duration="1300" data-aos="fade-left"
+                    class=" display-1 mb-1 main-text">Davis Maloch</h1>
+                <h2 data-aos-delay="1900" data-aos-duration="1300" data-aos="fade-right" class=" display-4 main-text">
+                    Self taught Developer</h2>
+                <h2 data-aos-delay="1900" data-aos-duration="1300" data-aos="fade-left" class=" display-4 main-text">
+                    Tallahassee Florida</h2>
                 <div class="main-btn">
                     <a href="#about">
-                        <i id="arrow-scroll-trigger" aria-describedby="tooltip" class="fa-regular fa-circle-down"></i>
+                        <i data-aos-delay="1900" data-aos-duration="1300" data-aos="flip-left" id="arrow-scroll-trigger"
+                            aria-describedby="tooltip" class="fa-regular fa-circle-down"></i>
                     </a>
                 </div>
                 <div id="tooltip" role="tooltip">
@@ -122,96 +131,95 @@
         </div>
 
         <!-- About section -->
-        <section id="about" class="background-1 py-4">
+        <section data-aos="fade-in" id="about" class="background-1 ">
             <div class="container-md d-grid about-style justify-content-center align-items-center">
-                <h3 class="display-5 mb-2"> About:</h3>
+                <h3 data-aos="fade-right" class="display-5 mb-2"> About:</h3>
                 <div id="about-container" class=" d-flex flex-column flex-lg-row align-items-center">
 
 
                     <div
                         class="d-flex col-12 col-lg-6 flex-column flex-sm-row flex-lg-column-reverse justify-content-center align-items-center">
-                        <div id="photo-section"
+                        <div data-aos="flip-up" id="photo-section"
                             class="p-3 d-flex personal-info-section justify-content-center align-items-center ">
                             <img class="img-fluid portrait-style" src="./img/portrait.jpg" alt="portrait photo">
                         </div>
-                        <div
-                            class="bio-section-btns p-3  d-flex flex-row flex-wrap flex-sm-column flex-lg-row justify-content-center ">
-                            <div data-id="about" class="bio-btn active col-6 col-sm-12 col-lg-6">About Me</div>
-                            <div data-id="education" class="bio-btn col-6 col-sm-12 col-lg-6">Education</div>
+                        <div data-aos="flip-down"
+                            class="bio-section-btns  p-3  d-flex flex-row flex-wrap flex-sm-column flex-lg-row justify-content-center ">
+                            <div data-id="about" class="bio-btn active col-6 col-sm-12 col-lg-6">Statement</div>
                             <div data-id="coding" class="bio-btn col-6 col-sm-12 col-lg-6">Coding</div>
                             <div data-id="career" class="bio-btn col-6 col-sm-12 col-lg-6">Career</div>
-                            <div data-id="music" class="bio-btn col-6 col-sm-12 col-lg-6">Music</div>
-                            <div data-id="hobbies" class="bio-btn col-6 col-sm-12 col-lg-6">Hobbies</div>
+                            <div data-id="education" class="bio-btn col-6 col-sm-12 col-lg-6">Education</div>
+
+
+                            <div data-id="qualities" class="bio-btn col-6 col-sm-12 col-lg-6">Qualities</div>
+                            <div data-id="hobbies" class="bio-btn col-6 col-sm-12 col-lg-6">Interests</div>
 
 
                         </div>
                     </div>
 
-                    <div class="about-text">
+                    <div data-aos="fade-left" class="about-text">
                         <div id="about-section" data-id="about" class="bio-section ">
-                            <h4>About Me:</h4>
-                            <p>I'm Davis and I'm a web developer currently residing in Tallahassee, FL.
-                                Throughout my life, I've always had a profound appreciation for
-                                both technology and the arts. In early 2022, I began my journey learning to code,
-                                and have since developed a passion for the
-                                transformative
-                                possibilities technology offers. Check out the rest of my bio if you want to
-                                learn more about my background, or move on to see my current skills and
-                                projects. </p>
-                        </div>
-                        <div id="education-section" data-id="education" class="bio-section ">
-                            <h4>Education:</h4>
-                            <p>I began my academic journey at Jacksonville University, majoring in Music
-                                Business and Jazz Guitar. The program placed emphasis on integrating private
-                                studies with production, marketing, and business. Subsequently, I transferred to
-                                Florida State University to earn my Bachelor's degree in Music for Classical
-                                Guitar, where the curriculum placed a heightened focus on private studies,
-                                theory, and historical perspectives.</p>
-
+                            <h4>Statement:</h4>
+                            <p>Motivated developer from Tallahassee, FL, with a passion for the arts and technology. My
+                                objective is to work with individuals who possess a unique
+                                blend of creativity and dedication to building innovative solutions that enhance the
+                                lives of others.</p>
                         </div>
                         <div id="coding-section" data-id="coding" class="bio-section ">
                             <h4>Coding:</h4>
-                            <p>I began learning to code by poring over a number of online resources for fun. It quickly
-                                became a serious pursuit as I found myself coding long hours and on weekends. My
-                                specialty is in front-end, but I am also interested in gaining more experience with the
-                                backend and hope to be able to build full applications from the ground up in the near
-                                future. Being self-taught has had a profound impact on my developer career, as I
-                                successfully honed my ability to teach myself new skills and stay up-to-date on the
-                                latest technologies.
+                            <p>I started learning how to code with "The Web Developer Bootcamp" on Udemy,
+                                by Colt Steele. After completing the front-end section, I decided to work on
+                                various projects and sought the guidance of a tutor who helped me through a NodeJS project.
+                                Then, I got my first developer job at Florida Memory.
+                                <span class="link-style" id="career-btn-link">See
+                                    career</span> Outside of that, I continued to expand my skillset by taking a
+                                TypeScript course titled, "Mastering TypeScript", by Colt Steele, and then a React
+                                course titled "React - The Complete Guide" by Maximilian Schwarzmuller. I actively worked on multiple React/TypeScript
+                                projects and
+                                then ventured into learning Next JS. Finally, I completed the
+                                backend section of the bootcamp course and finished off with a course on JavaScript
+                                algorithms and data structures.
 
                             </p>
 
                         </div>
-                        <div id="career-section" data-id="career" class="bio-section ">
-                            <h4>Career:</h4>
-                            <p>In early 2023, I embarked on the first chapter of my career by joining the team
-                                at Florida Memory. We maintain a vast collection of historical records, maps,
-                                photos, and films, and my role involves crafting tools to improve public
-                                accessibility to these resources. Additionally, I am in charge of making changes
-                                to the website and implementing new features and technologies.
-
-                                This has been a unique challenge as the rest of my team comprises historians and
-                                archivists. As a result, I've learned to effectively bridge the gap between
-                                technology and historical preservation. </p>
+                        <div id="education-section" data-id="education" class="bio-section ">
+                            <h4>Education:</h4>
+                            <p>I began my academic journey at Jacksonville University, majoring in Music
+                                Business and Jazz Guitar. The program placed emphasis on private
+                                studies, production, marketing, and business. Subsequently, I transferred to
+                                Florida State University to earn my Bachelor's degree in Music for Classical
+                                Guitar, where the curriculum focused on private studies,
+                                theory, and historical perspectives.</p>
 
                         </div>
-                        <div id="music-section" data-id="music" class="bio-section ">
-                            <h4>Music:</h4>
-                            <p>I am actively engaged in various music projects, both as a solo artist and
-                                through collaborations. I'm also a producer and
-                                occasionally take on the roles of mixing and mastering for bands and artists.
-                                Additionally, I have created scores for a
-                                handful of student video art projects and am eager to further
-                                these pursuits over the coming years.</p>
+
+                        <div id="career-section" data-id="career" class="bio-section ">
+                            <h4>Career:</h4>
+                            <p>In early 2023, I joined the team at <a target="_blank" class="link-style"
+                                    href="https://www.floridamemory.com/">"Florida Memory"</a> , where we curate an
+                                extensive collection of photos, films, audio, maps, and historical records. Our website
+                                offers access to this collection along with a range of tools and educational resources
+                                for exploring Florida's history and culture. My role primarily involves developing new
+                                website features, resolving bugs and issues, and creating tools to enhance the
+                                efficiency of my colleagues' work with these materials.
+                            </p>
+
+                        </div>
+                        <div id="qualities-section" data-id="qualities" class="bio-section ">
+                            <h4>Qualities:</h4>
+                            <p>Attention to detail is integral to my work, as I pursue precision and accuracy in all my
+                                endeavors. I am proficient in self-guided learning and seldom require extensive
+                                assistance when it comes to finding solutions to problems. I am also a team player and function well in collaborative
+                                environments that foster the sharing of ideas and the attainment of collective goals.
+                            </p>
 
                         </div>
                         <div id="hobbies-section" data-id="hobbies" class="bio-section ">
-                            <h4>Hobbies:</h4>
-                            <p>In addition to everything else, I like to stay busy and have a wide range of
-                                hobbies. I'm a dog lover and have an Australian Shepherd/Australian Cattle Dog
-                                mix. I'm also in to jogging, woodworking and sewing.
-                                Finally, I have a passion for traveling and experiencing different cultures around teh
-                                world and dream of exploring more soon.</p>
+                            <h4>Interests:</h4>
+                            <p>I am a musician, producer and lover of electronic music. Additionally, I have a range of hobbies, including
+                                hiking, jogging, sewing, woodworking, and dogs.</p>
 
                         </div>
                     </div>
@@ -220,13 +228,16 @@
 
                 </div>
             </div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
         </section>
 
         <!-- skills section-->
-        <section id="skills" class="background-2 py-4 py-md-5  ">
+        <section id="skills" class="background-2   ">
             <!-- skillset animation -->
             <div class="container-md ">
-                <div class=" display-5 ">
+                <div data-aos="fade-right" class=" display-5 ">
                     <div
                         class="skill-title-container d-flex flex-column justify-content-center flex-sm-row justify-content-sm-start  align-items-center mb-sm-4 mb-lg-5">
                         <h3 class="display-5">Current Skillset: </h3>
@@ -234,10 +245,10 @@
                             <span>JavaScript</span>
                             <span>React</span>
                             <span>Typescript</span>
-                            <span>jQuery</span>
                             <span>Node</span>
-                            <span>Design</span>
-                            <span>PHP</span>
+                            <span>Express</span>
+                            <span>Mongo DB</span>
+                            <span>Tailwind</span>
                         </div>
                     </div>
 
@@ -248,151 +259,250 @@
                     <div class="accordion " id="bio-accordion">
 
 
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="headingOne">
+                        <div data-aos="flip-right" class="accordion-item">
+                            <h4 class="accordion-header" id="headingJS">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    data-bs-target="#collapseJS" aria-expanded="false" aria-controls="collapseJS">
                                     JavaScript
                                 </button>
                             </h4>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            <div id="collapseJS" class="accordion-collapse collapse" aria-labelledby="headingJS"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    In my current professional capacity, I primarily use vanilla JavaScript to meet the
-                                    requirements of my role. My proficiency includes knowledge of best practices,
-                                    understanding of fundamental concepts, utilization of APIs, handling of asynchronous
-                                    JavaScript, and manipulation of intricate data structures.
+                                    Very comfortable with client-side JavaScript. This includes an
+                                    understanding of fundamental concepts, client-side scripting, DOM manipulation,
+                                    event handling, working with web APIs, handling asynchronous operations, classes,
+                                    and implementing libraries/frameworks.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="headingTwo">
+                        <div data-aos="flip-left" class="accordion-item">
+                            <h4 class="accordion-header" id="headingReact">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    data-bs-target="#collapseReact" aria-expanded="false" aria-controls="collapseReact">
                                     React
                                 </button>
                             </h4>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            <div id="collapseReact" class="accordion-collapse collapse" aria-labelledby="headingReact"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    I have a strong level of comfort and proficiency with React, encompassing
-                                    an understanding of component structure, management of state, seamless facilitation
-                                    of data flow between components, and utilization of advanced hooks. These include
-                                    useReducer, the Context API, useMemo, refs, portals and React router.
+                                    I have a strong level of comfort in React, including an
+                                    understanding of component structuring, lifecycle and data flow. Additionally, I am
+                                    proficient with state management, side effects, virtual DOM, custom hooks, Babel,
+                                    Context API, Redux, and router.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="headingThree">
+                        <div data-aos="flip-right" class="accordion-item">
+                            <h4 class="accordion-header" id="headingNextJS">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    data-bs-target="#collapseNextJS" aria-expanded="false"
+                                    aria-controls="collapseNextJS">
+                                    Next JS
+                                </button>
+                            </h4>
+                            <div id="collapseNextJS" class="accordion-collapse collapse" aria-labelledby="headingNextJS"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    I have a solid understanding of server-side rendering (SSR) and static site
+                                    generation (SSG), and can optimize the performance of web applications. Additionally, I am
+                                    also comfortable setting up API routes and handling backend logic efficiently.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="flip-left" class="accordion-item">
+                            <h4 class="accordion-header" id="headingTS">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTS" aria-expanded="false" aria-controls="collapseTS">
                                     TypeScript
                                 </button>
                             </h4>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseTS" class="accordion-collapse collapse" aria-labelledby="headingTS"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    Having successfully completed a comprehensive course in TypeScript, I am able to
-                                    leverage TypeScript across diverse
-                                    applications, including React. I understand fundamentals of type annotation,
-                                    variables, functions, object types, array types, interfaces, classes, generics, and
-                                    nuanced type narrowing techniques. Additionally, I am familiar with TypeScript's
-                                    compilation process, allowing me to navigate the intricacies of what occurs behind
-                                    the scenes in a TypeScript application.
+                                    I have a solid grasp of type annotation, including variables,
+                                    functions, object types, array types, interfaces, classes, generics, and nuanced
+                                    type narrowing techniques. I am also familiar with TypeScript's compilation process.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="headingFour">
+                        <div data-aos="flip-right" class="accordion-item">
+                            <h4 class="accordion-header" id="headingJquery">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    data-bs-target="#collapseJquery" aria-expanded="false"
+                                    aria-controls="collapseJquery">
                                     jQuery
                                 </button>
                             </h4>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            <div id="collapseJquery" class="accordion-collapse collapse" aria-labelledby="headingJquery"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    I have a solid understanding of jQuery and often use it at my current position. I am
-                                    particularly fond of it for basic event handling and effects.
+                                    I use jQuery pretty often in my current position as we don't utilize larger frameworks like React. I
+                                    typically use it for quick DOM manipulation and effects.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="headingFive">
+
+
+                        <div data-aos="flip-left" class="accordion-item">
+                            <h4 class="accordion-header" id="headingGit">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    data-bs-target="#collapseGit" aria-expanded="false" aria-controls="collapseGit">
+                                    Git + Github
+                                </button>
+                            </h4>
+                            <div id="collapseGit" class="accordion-collapse collapse" aria-labelledby="headingGit"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    I am comfortable with all of the fundamentals of Git like setting up repositories, maintaining adequate code snapshots and best practices for creating/naming branches. I would have no problems
+                                    integrating seamlessly into a group environment.
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="flip-right" class="accordion-item">
+                            <h4 class="accordion-header" id="headingNode">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNode" aria-expanded="false" aria-controls="collapseNode">
                                     Node
                                 </button>
                             </h4>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            <div id="collapseNode" class="accordion-collapse collapse" aria-labelledby="headingNode"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    I am comfortable working with Node having successfully developed a Node.js
-                                    command-line application and have a strong understanding of best practices. This
-                                    includes a comprehensive understanding of server-side rendering, setting up web
-                                    servers, interaction with the operating system, navigation of directories, and adept
-                                    utilization of powerful frameworks such as Express. I also am competent working with
-                                    npm packages, module syntax, and handling exports and requirements.
+                                    I have a solid
+                                    understanding of server-side rendering, setting up web servers, interacting with the
+                                    operating system, navigating directories, and utilizing powerful frameworks like
+                                    Express. I am also competent in working with npm packages, module syntax, and
+                                    handling exports and requirements.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="headingSix">
+                        <div data-aos="flip-left" class="accordion-item">
+                            <h4 class="accordion-header" id="headingExpress">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Responsive Design
+                                    data-bs-target="#collapseExpress" aria-expanded="false"
+                                    aria-controls="collapseExpress">
+                                    Express
                                 </button>
                             </h4>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#bio-accordion">
+                            <div id="collapseExpress" class="accordion-collapse collapse"
+                                aria-labelledby="headingExpress" data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    I have plenty of experience with HTML and CSS, and a general knack for aesthetics
-                                    and design. I'm able to plan and implement responsive foundations that ensure both
-                                    visual appeal and optimal functionality across a spectrum of devices. As a one man
-                                    operation in my current role, I have the responsibility of creating design mockups
-                                    and brainstorming changes with the rest of my team prior to implementation.
+                                    I am comfortable building Express apps and have a solid understanding of various
+                                    concepts, including handling HTTP requests, setting up APIs,
+                                    configuring routes, authentication,  security, middleware, and
+                                     HTML templating.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="headingSeven">
+                        <div data-aos="flip-right" class="accordion-item">
+                            <h4 class="accordion-header" id="headingMongo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    data-bs-target="#collapseMongo" aria-expanded="false" aria-controls="collapseMongo">
+                                    MongoDB + Mongoose
+                                </button>
+                            </h4>
+                            <div id="collapseMongo" class="accordion-collapse collapse" aria-labelledby="headingMongo"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    Comfortable setting up and maintaining a MongoDB database and integrating it into an
+                                    Express app using Mongoose, I am proficient in the basics of querying, adding,
+                                    updating, and deleting data. Additionally, I am experienced in setting up schemas,
+                                    creating new models, validating incoming data, and implementing middleware, methods,
+                                    and virtuals.
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="flip-left" class="accordion-item">
+                            <h4 class="accordion-header" id="headingPhp">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePhp" aria-expanded="false" aria-controls="collapsePhp">
                                     PHP
                                 </button>
                             </h4>
-                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            <div id="collapsePhp" class="accordion-collapse collapse" aria-labelledby="headingPhp"
                                 data-bs-parent="#bio-accordion">
                                 <div class="accordion-body">
-                                    I am familiar with PHP as it powers our website at Florida Memory. However, I
-                                    usually develop new features independently and then integrate them into a PHP file,
-                                    so it is not integral to my typical workflow. Nevertheless, I am well-versed in the
-                                    syntax and have a good understanding of how the PHP ecosystem operates.
+                                    I am well-versed in the PHP
+                                    syntax and have a decent understanding of how the PHP ecosystem operates.
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="flip-right" class="accordion-item">
+                            <h4 class="accordion-header" id="headingAlgos">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseAlgos" aria-expanded="false" aria-controls="collapseAlgos">
+                                    Algorithms and Data Structures
+                                </button>
+                            </h4>
+                            <div id="collapseAlgos" class="accordion-collapse collapse" aria-labelledby="headingAlgos"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    I am comfortable with Big O notation, common programming patterns, recursion, search
+                                    algorithms, and various sorting algorithms such as bubble sort, selection sort,
+                                    insertion sort, quicksort, merge sort, and radix sort. Additionally, I have a good
+                                    understanding of essential data structures like linked lists, trees, heaps, hash
+                                    tables, and graphs, as well as their traversal methods. Moreover, I am familiar with
+                                    Dijkstra's shortest path algorithm and have a good grasp of dynamic programming
+                                    techniques.
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="flip-left" class="accordion-item">
+                            <h4 class="accordion-header" id="headingDesign">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseDesign" aria-expanded="false"
+                                    aria-controls="collapseDesign">
+                                    Responsive Design
+                                </button>
+                            </h4>
+                            <div id="collapseDesign" class="accordion-collapse collapse" aria-labelledby="headingDesign"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    I have a strong understanding of HTML and CSS best practices, including working with
+                                    frameworks like Bootstrap. I am proficient in planning and implementing responsive
+                                    foundations that ensure both visual appeal and optimal functionality across a
+                                    spectrum of devices. Additionally, I have experience creating design mockups and
+                                    collaborating with my team to brainstorm changes prior to implementation.
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="flip-right" class="accordion-item">
+                            <h4 class="accordion-header" id="headingCSS">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCSS" aria-expanded="false" aria-controls="collapseCSS">
+                                    CSS Frameworks
+                                </button>
+                            </h4>
+                            <div id="collapseCSS" class="accordion-collapse collapse" aria-labelledby="headingCSS"
+                                data-bs-parent="#bio-accordion">
+                                <div class="accordion-body">
+                                    I have experience using different CSS frameworks such as bootstrap, tailwind,
+                                    Material UI and Bulma.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="background-1 py-4 py-md-5">
+        <section id="projects" class="background-1 ">
             <div class="container-lg d-flex flex-column">
                 <div class=" project-text mb-4 mb-lg-5">
-                    <h3 class="display-5">Projects: </h3>
+                    <h3 data-aos="fade-right" class="display-5">Projects: </h3>
                 </div>
                 <div class="projects-main ">
-
-
-
-
-
-
-
-
-
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
+                    <div data-aos-duration="400" data-aos="fade-right"
+                        class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
                             <img class="image-img" src="./img/flourish.png" alt="Flourish menu screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
@@ -403,7 +513,7 @@
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://flourish-accessibility.netlify.app/" target="_blank"
+                                        <a href="https://flourish-accessibility2.netlify.app/" target="_blank"
                                             class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
@@ -451,7 +561,120 @@
                         </div>
 
                     </div>
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
+                    <div data-aos="fade-down" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="images">
+                            <img class="image-img" src="./img/react-blackjack.png" alt="Flourish menu screenshot">
+                            <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
+                                <h4 class="image-title">React Blackjack Game</h4>
+                                <p class="image-description text-center">Blackjack game built with React</p>
+                                <button value="More Details" class="project-description-btn">More
+                                    Details</button>
+                                <div class="code-links">
+                                    <div class="hover-wrapper ">
+                                        <a href="https://react-blackjack-game.netlify.app/" target="_blank"
+                                            class="cta ">
+                                            <span>Live</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hover-wrapper wrapper-2">
+                                        <a href="https://github.com/admaloch/react-blackjack" target="_blank"
+                                            class="cta ">
+                                            <span>Github</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-info ">
+                                    <div class="project-info-wrap ">
+                                        <div class="close-project-bio">
+                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                        </div>
+                                        <div class="bio-text ">
+                                            <h5>Project details:</h5>
+                                            <p>
+                                                This is a fully featured blackjack game built with React, Redux and
+                                                Router, complete with a UI and multiple players. This has all of the
+                                                features of a typical Blackjack game and the logic for the cards, deck
+                                                and user data are all built from scratch and no APIs were used during
+                                                this process. The intent of this project was to solidify my comfort with
+                                                component structuring, hooks, and to develop a stronger understanding of
+                                                the component lifecycle and rerender process.
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-left" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="images">
+                            <img class="image-img" src="./img/react-movies.png" alt="react movie app screenshot">
+                            <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
+                                <h4 class="image-title">React Movie Search</h4>
+                                <p class="image-description text-center">A rebuild of a movie search project using React
+                                    and Typescript</p>
+                                <button value="More Details" class="project-description-btn">More
+                                    Details</button>
+                                <div class="code-links">
+                                    <div class="hover-wrapper ">
+                                        <a href="https://adm-react-movies.netlify.app/" target="_blank" class="cta ">
+                                            <span>Live</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hover-wrapper wrapper-2">
+                                        <a href="https://github.com/admaloch/react-movie-search" target="_blank"
+                                            class="cta ">
+                                            <span>Github</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-info ">
+                                    <div class="project-info-wrap ">
+                                        <div class="close-project-bio">
+                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                        </div>
+                                        <div class="bio-text">
+                                            <h5>Project details:</h5>
+                                            <p>This project is a React rebuild of a movie search app initially
+                                                built with vanilla JS. Since the base code was already complete, the
+                                                primary goal
+                                                of
+                                                this project was to practice my React and TypeScript skills, and
+                                                solidify my comfort with component structuring, state management, and
+                                                more
+                                                advanced react hooks such as useReducer, useMemo, portals and the
+                                                context api.
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="flip-right" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
                             <img class="image-img" src="./img/node-blackjack.png" alt="Blackjack app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
@@ -497,63 +720,8 @@
                         </div>
 
                     </div>
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
-                        <div class="images">
-                            <img class="image-img" src="./img/react-movies.png" alt="react movie app screenshot">
-                            <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="image-title">React Movie Search</h4>
-                                <p class="image-description text-center">A rebuild of a movie search project using React
-                                    and Typescript</p>
-                                <button value="More Details" class="project-description-btn">More
-                                    Details</button>
-                                <div class="code-links">
-                                    <div class="hover-wrapper ">
-                                        <a href="https://adm-react-movies.netlify.app/" target="_blank"
-                                            class="cta ">
-                                            <span>Live</span>
-                                            <svg viewBox="0 0 13 10">
-                                                <path d="M1,5 L11,5"></path>
-                                                <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="hover-wrapper wrapper-2">
-                                        <a href="https://github.com/admaloch/react-movie-search" target="_blank" class="cta ">
-                                            <span>Github</span>
-                                            <svg viewBox="0 0 13 10">
-                                                <path d="M1,5 L11,5"></path>
-                                                <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-info ">
-                                    <div class="project-info-wrap ">
-                                        <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
-                                        </div>
-                                        <div class="bio-text">
-                                            <h5>Project details:</h5>
-                                            <p>This project is a React rebuild of a movie search app initially
-                                                built with vanilla JS. Since the base code was already complete, the
-                                                primary goal
-                                                of
-                                                this project was to practice my React and TypeScript skills, and
-                                                solidify my comfort with component structuring, state management, and more
-                                                advanced react hooks such as useReducer, useMemo, portals and the
-                                                context api.
-                                            </p>
-                                        </div>
 
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
+                    <div data-aos="zoom-in-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
                             <img class="image-img" src="./img/movie-js.png" alt="javascript movie app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
@@ -611,8 +779,64 @@
                         </div>
 
                     </div>
+                    <div data-aos="flip-left" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="images">
+                            <img class="image-img" src="./img/qr-generator.png" alt="qr img generator screenshot">
+                            <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
+                                <h4 class="image-title">Image Based QR code generator</h4>
+                                <p class="image-description text-center">A tool to easily generate qr codes built for
+                                    Florida Memory</p>
+                                <button value="More Details" class="project-description-btn">More
+                                    Details</button>
+                                <div class="code-links">
+                                    <div class="hover-wrapper ">
+                                        <a href="https://qr-image-generator.netlify.app/" target="_blank" class="cta ">
+                                            <span>Live</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hover-wrapper wrapper-2">
+                                        <a href="https://github.com/admaloch-dos/qr-img-cropper-generator"
+                                            target="_blank" class="cta ">
+                                            <span>Github</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-info ">
+                                    <div class="project-info-wrap ">
+                                        <div class="close-project-bio">
+                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                        </div>
+                                        <div class="bio-text">
+                                            <h5>Project details:</h5>
+                                            <p>
+                                                Florida Memory frequently utilizes QR codes for outreach and various
+                                                practical applications. As an archive renowned for its extensive photo
+                                                collection, we sought the capability to embed QR codes directly into our
+                                                photos. During our search, we discovered an open-source solution called
+                                                QART.js, which enables the generation of basic image-based codes.
+                                                Inspired by its potential, we proceeded to enhance and develop it into a
+                                                more user-friendly platform that simplifies the process of generating,
+                                                editing, and downloading codes on the fly.
+                                            </p>
+                                        </div>
 
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-right" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
                             <img class="image-img" src="./img/img-slider.png" alt="folk fest image slider screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
@@ -650,13 +874,14 @@
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
-                                            <p>This image display was built with HTML, CSS, JavaScript and Bootstrap, and was created to be showcased at the annual Florida Folk
-                                                Festival. It contains over 1000 photographs, an audio player with music from the Florida Memory audio
-                                                collection and custom QR codes that re-generate with each image and contain links to individual item pages. The image slider uses a Bootstrap image carousel but
-                                                with
-                                                more customizable features added to allow the user more control over
-                                                speed,
-                                                transition effects, qr-code image etc. 
+                                            <p>This image display was built using HTML, CSS, JavaScript, and Bootstrap.
+                                                It was specifically created to be showcased at the annual Florida Folk
+                                                Festival and other outreach events. The goal was to have a slider that
+                                                could be linked to data from the database and include custom features.
+                                                To achieve this, a Bootstrap slider was used as the base, and additional
+                                                functionalities were added. These include image-based QR codes that link
+                                                to item pages on the website, an audio player, and customizable settings
+                                                for the slider.
                                             </p>
                                         </div>
 
@@ -668,7 +893,110 @@
                         </div>
 
                     </div>
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
+                    <div data-aos="fade-down" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="images">
+                            <img class="image-img" src="./img/photo-transfer.png" alt="Blackjack app screenshot">
+                            <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
+                                <h4 class="image-title">Photo Order Transfer Tool</h4>
+                                <p class="image-description text-center">Windows batch script designed to streamline
+                                    the file locating and copying process for invoice orders in the photo lab at Florida
+                                    Memory.</p>
+                                <button value="More Details" class="project-description-btn ">More
+                                    Details</button>
+                                <div class="code-links">
+                                    <div class="hover-wrapper wrapper-2 blackjack-github">
+                                        <a href="https://github.com/admaloch-dos/photo-invoice-search-tool"
+                                            target="_blank" class="cta ">
+                                            <span>Github</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-info ">
+                                    <div class="project-info-wrap ">
+                                        <div class="close-project-bio">
+                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                        </div>
+                                        <div class="bio-text">
+                                            <h5>Project details:</h5>
+                                            <p>This tool is specifically built to assist in locating files for invoice
+                                                orders, copying them over, keeping track of files that have not yet been
+                                                uploaded, and maintaining accurate records for each processed order.
+                                                Previously, the staff had to manually check if the photos requested were
+                                                located on the cloud and copy them to a new location. This process was
+                                                time-consuming, especially considering the large size of the directory
+                                                and the high-resolution prints that took a long time to load and copy.
+                                                The primary goal of building this tool was to streamline the entire
+                                                process, allowing the staff to focus on other projects while the search
+                                                is being completed. This tool automates the file retrieval and copying
+                                                process, saving time and effort for the staff.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-left" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="images">
+                            <img class="image-img" src="./img/yelp-camp.png" alt="Florid county tool screenshot">
+                            <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
+                                <h4 class="image-title">Yelp Camp</h4>
+                                <p class="image-description text-center">Extensive code-along from the backend section
+                                    of the course, "The Web Developer Bootcamp", by Colt Steele.
+                                </p>
+                                <button value="More Details" class="project-description-btn">More
+                                    Details</button>
+                                <div class="code-links">
+                                    <div class="hover-wrapper ">
+                                        <a href="https://yelp-camp-d07l.onrender.com/" target="_blank" class="cta ">
+                                            <span>Live</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hover-wrapper wrapper-2">
+                                        <a href="https://github.com/admaloch/yelp-camp" target="_blank" class="cta ">
+                                            <span>Github</span>
+                                            <svg viewBox="0 0 13 10">
+                                                <path d="M1,5 L11,5"></path>
+                                                <polyline points="8 1 12 5 8 9"></polyline>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-info ">
+                                    <div class="project-info-wrap ">
+                                        <div class="close-project-bio">
+                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                        </div>
+                                        <div class="bio-text">
+                                            <h5>Project details:</h5>
+                                            <p>This is fake campsite locater that allows users to create accounts and
+                                                campsites. This project was built slowly piece by piece as a way to
+                                                introduce new backend conepts in the course. The project features a
+                                                RESTful API and db using Mongo DB + Mongoose, html templating using EJS,
+                                                session storage, cookies, authentification, authorization and security.
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos-duration="400" data-aos="flip-left"
+                        class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
                             <img class="image-img" src="./img/countytimeline.png" alt="Florid county tool screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
@@ -719,7 +1047,7 @@
                                                 tool,
                                                 streamlining the research process and saving valuable time for both
                                                 patrons
-                                                and archive staff. 
+                                                and archive staff.
                                             </p>
                                         </div>
 
@@ -731,7 +1059,8 @@
                         </div>
 
                     </div>
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
+                    <div data-aos-duration="800" data-aos="zoom-in-up"
+                        class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
                             <img class="image-img" src="./img/letterbook.png" alt="governors letterbooks screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
@@ -774,13 +1103,14 @@
                                             <p>This was the first project I completed at Florida Memory. This is a
                                                 simple
                                                 research tool built to assist patrons of The State Archives of Florida
-                                                reference room. The archives have scans of Florida Governors' letterbooks that are often requested by historians who are
+                                                reference room. The archives have scans of Florida Governors'
+                                                letterbooks that are often requested by historians who are
                                                 studying
                                                 Florida history. The intent of this project was to build a simple
                                                 JavaScript
                                                 tool that can grab the links to these images and organize them so they
                                                 can
-                                                be more easily viewed and downloaded. 
+                                                be more easily viewed and downloaded.
                                             </p>
                                         </div>
 
@@ -792,22 +1122,23 @@
                         </div>
 
                     </div>
-                    <div class="project-item col-12 col-sm-6 col-lg-4">
+                    <div data-aos-duration="1200" data-aos="flip-right"
+                        class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
                             <img class="image-img" src="./img/festival-programs.png"
                                 alt="folk fest programs screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="image-title">Governor's letterbooks research tool</h4>
-                                <p class="image-description text-center">A viewer for the pamphlets and schedules from
-                                    each annual Florida Folk Festival
+                                <h4 class="image-title">Folk-Festival Programs Webpage </h4>
+                                <p class="image-description text-center">A rebuild of an old page on the Florida Memory
+                                    site
 
                                 </p>
                                 <button value="More Details" class="project-description-btn">More
                                     Details</button>
                                 <div class="code-links">
                                     <div class="hover-wrapper ">
-                                        <a href="https://admaloch-dos.github.io/folk-festival-programs/" target="_blank"
-                                            class="cta ">
+                                        <a href="https://www.floridamemory.com/learn/exhibits/florida-folklife/festival-programs.php"
+                                            target="_blank" class="cta ">
                                             <span>Live</span>
                                             <svg viewBox="0 0 13 10">
                                                 <path d="M1,5 L11,5"></path>
@@ -855,50 +1186,45 @@
                     </div>
                 </div>
             </div>
+
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+
         </section>
 
-        <!-- modal overlay -->
-        <div class="modal-overlay" id="modal-overlay"></div>
 
-        <!-- hover modal -->
-        <div id="modal-container" class="container">
-            <div class="modal-contact">
-                <div class="modal-wrap d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="modal-title text-center"></h3>
-                    <p class="modal-paragraph text-center"></p>
-                </div>
-            </div>
-        </div>
+
 
         <!-- Contact section -->
-        <section id="contact" class="background-2 py-4 py-md-5">
+        <section id="contact" class="background-2 ">
             <div class="container-md">
-                <div class=" ">
+                <div data-aos="fade-right">
                     <h3 class="display-5">Contact me: </h3>
                 </div>
                 <div id="contact-bubbles" class="contact-bubbles d-flex flex-wrap">
 
-                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div data-aos="fade-right" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
-                            <div class="row-bubbles row-bubbles1" data-toggle="popover" title="Hiring"
+                            <div class="contact-btn row-bubbles row-bubbles1" data-toggle="popover" title="Hiring"
                                 data-content="Currently looking for a position as a junior developer. If you are a hiring manager with a position available, I am interested in discussing the details.">
                                 <img src="./img/contactgeneral.svg" alt="html svg">
                             </div>
                             <p class="contact-info">Hiring</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div data-aos="fade-down" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container ">
-                            <div class="row-bubbles row-bubbles2" title="Freelance"
+                            <div class="contact-btn row-bubbles row-bubbles2" title="Freelance"
                                 data-content="Interested in taking on freelance projects. If you have something you need done, feel free to send me an email.">
                                 <img src="./img/contactfreelance.svg" alt="html svg">
                             </div>
                             <p class="contact-info .font-weight-bold">Freelance</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div data-aos="fade-left" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
-                            <div class="row-bubbles row-bubbles3" title="Websites"
+                            <div class="contact-btn row-bubbles row-bubbles3" title="Websites"
                                 data-content="Contact if you have a web page or app and want to discuss ideas for how to improve and implement new features.">
                                 <img src="./img/contactfreelance.svg" alt="html svg">
                             </div>
@@ -906,27 +1232,27 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div data-aos="fade-right" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
-                            <div class="row-bubbles row-bubbles1" title="Collaboration"
+                            <div class="contact-btn row-bubbles row-bubbles1" title="Collaboration"
                                 data-content="If you are a developer looking for someone to collaborate with on a project, I am interested in joining in. Message me and we can discuss the details.">
                                 <img src="./img/contactcollaboration.svg" alt="html svg">
                             </div>
                             <p class="contact-info">Collaboration</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div data-aos="fade-up" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container new-margin">
-                            <div class="row-bubbles row-bubbles2" title="Non-Profit"
+                            <div class="contact-btn row-bubbles row-bubbles2" title="Non-Profit"
                                 data-content="Interested in taking on projects for non-profits or charitable causes.">
                                 <img src="./img/contactnonprofit.svg" alt="html svg">
                             </div>
                             <p class="contact-info">Music</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div data-aos="fade-left" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
-                            <div class="row-bubbles row-bubbles3" title="Anything Else"
+                            <div class="contact-btn row-bubbles row-bubbles3" title="Anything Else"
                                 data-content="I'm available to chat about anything else, wether its development, audio production, film or dogs. Feel free to send a message!">
                                 <img src="./img/contactquestion.svg" alt="html svg">
                             </div>
@@ -936,23 +1262,38 @@
 
                 </div>
                 <div class="button-container d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn contact-btn my-2 my-md-4 my-lg-5">
+                    <button data-aos="zoom-out" type="button" id="email-btn"
+                        class="btn contact-btn my-2 my-md-4 my-lg-5">
                         Email Me
                     </button>
                 </div>
             </div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
+            <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
         </section>
 
         <!-- email modal -->
-        <div class="modal-bg ">
-
-            <div class="form">
-                <div class="email-contact-info closediv">
-                    <h4 class="form-text">Feel free to contact anytime and I'll get back as soon as I can.
+        <div class="modal-bg  ">
+            <!-- contact-btn-form -->
+            <div class="contact-item d-none">
+                <div class="title-container">
+                    <h2 class="modal-title"></h2>
+                </div>
+                <div class="paragraph-container">
+                    <p class="modal-paragraph"></p>
+                </div>
+            </div>
+            <!-- email form -->
+            <div class="form d-none">
+                <div class="email-contact-info closediv ">
+                    <h4 class="form-text text-center">Feel free to contact anytime and I'll get back as soon as I can.
                     </h4>
                     <div class="info">
                         <div class="information">
-                            <i class="fa-solid fa-house info-icon" aria-hidden="true" alt="location icon" class="info-icon"></i>
+                            <i class="fa-solid fa-house info-icon" aria-hidden="true" alt="location icon"
+                                class="info-icon"></i>
                             <p>2775 Gerald Dr. Tallahasee Fl. 32310</p>
                         </div>
                         <div class="information">
@@ -965,7 +1306,7 @@
                         </div>
                     </div>
                     <div class="modal-social-media">
-                        
+
                         <div class="modal-icon">
                             <a href="https://www.facebook.com/davis.maloch" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
@@ -981,31 +1322,43 @@
                 </div>
                 <div class="email-contact-form">
                     <form class="email-form" action="index.html">
-                        <h4 class="email-title">Send me a message</h3>
-                        <div class="input-container ">
-                            <input type="text" name="name" class="contact-input">
-                            <label for="">Name</label>
-                            <span>Name</span>
-                        </div>
-                        <div class="input-container">
-                            <input type="email" name="email" class="contact-input">
-                            <label for="">Email</label>
-                            <span>Email</span>
-                        </div>
-                        <div class="input-container">
-                            <input type="tel" name="phone" class="contact-input">
-                            <label for="">Phone #</label>
-                            <span>Phone</span>
-                        </div>
-                        <div class="input-container textarea ">
-                            <textarea name="message" class="contact-input"></textarea>
-                            <label for="">Message:</label>
-                            <span>Message</span>
-                        </div>
-                        <div class="btn-container">
-                            <input type="submit" value="Send" class="email-btn " />
-                            <button type="button" class="email-btn close-btn">Cancel</button>
-                        </div>
+                        <h4 class="email-title text-center">Send me a message</h3>
+                            <div class="input-main-container">
+                                <div class="input-container ">
+                                    <input type="text" name="name" class="contact-input">
+                                    <label for="">Name</label>
+                                    <span>Name</span>
+                                </div>
+                            </div>
+
+                            <div class="input-main-container">
+                                <div class="input-container">
+                                    <input type="email" name="email" class="contact-input">
+                                    <label for="">Email</label>
+                                    <span>Email</span>
+                                </div>
+                            </div>
+
+                            <div class="input-main-container">
+                                <div class="input-container">
+                                    <input type="tel" name="phone" class="contact-input">
+                                    <label for="">Phone #</label>
+                                    <span>Phone</span>
+                                </div>
+                            </div>
+
+                            <div class="input-main-container">
+                                <div class="input-container textarea ">
+                                    <textarea name="message" class="contact-input"></textarea>
+                                    <label for="">Message:</label>
+                                    <span>Message</span>
+                                </div>
+                            </div>
+
+                            <div class="btn-container justify-content-center">
+                                <input type="submit" value="Send" class="email-btn " />
+                                <button type="button" class="email-btn close-btn">Cancel</button>
+                            </div>
 
                     </form>
 
@@ -1034,14 +1387,28 @@
 
     <!-- JS files -->
     <!-- popper/jquery -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
+        integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- main js file -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/loadAnimation.js"></script>
+    <script src="./js/toolTip.js"></script>
+    <script src="./js/scrollFuncs.js"></script>
+    <script src="./js/bioBtns.js"></script>
+    <script src="./js/navBar.js"></script>
+    <script src="./js/moreDetailsBtn.js"></script>
+    <script src="./js/contactSection.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

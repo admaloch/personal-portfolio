@@ -5,7 +5,7 @@
     width: 0;
     opacity: 0;
     height: 0;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-height: 95vh;
+    /* min-height: 95vh; */
 
 }
 
@@ -41,8 +41,8 @@
 .email-contact-form:before {
     content: '';
     position: absolute;
-    width: 26px;
-    height: 26px;
+    /* width: 26px;
+    height: 26px; */
     background-color: var(--dark-blue);
     transform: rotate(45deg);
     top: 50px;
@@ -50,27 +50,44 @@
 }
 
 .email-form {
-    padding: 2.3rem 2.2rem;
+    padding: 1rem 2rem;
     z-index: 10;
     overflow: hidden;
-    position: relative
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+height: 100%;
+
 }
 
 .email-title {
     color: var(--off-white);
     font-size: 1.5rem;
     line-height: 1;
-    margin-bottom: 0.7rem;
+    /* margin-bottom: 0.7rem; */
+
+}
+
+.input-main-container {
+width: 100%;
+display: flex;
+justify-content: center;
 }
 
 .input-container {
     position: relative;
-    margin: 1rem 0;
+    margin: .2rem 0;
+    width: 100%;
+max-width: 350px;
+
+
 }
 
 
 .contact-input {
     width: 100%;
+
     outline: none;
     border: 2px solid #fafafa;
     background: none;
@@ -185,10 +202,17 @@
 }
 
 .email-contact-info {
-    padding: 2.3rem 2.2rem;
+
     position: relative;
     letter-spacing: .1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+
 
 x .form-title {
     color: var(--dark-blue);
@@ -196,10 +220,13 @@ x .form-title {
 
 .form-text {
     color: var(--dark-blue);
-    margin: .2rem 0 2rem;
-    font-size: 1.3rem;
+    /* margin: .2rem 0 2rem; */
+    font-size: 1.1rem;
     font-weight: bold;
+    word-wrap: break-word;
+
 }
+
 
 .information {
 
@@ -213,7 +240,7 @@ x .form-title {
 
 .information p {
     margin-bottom: 0;
-    white-space: nowrap
+    /* white-space: nowrap */
 }
 
 .info-icon {
@@ -221,9 +248,7 @@ x .form-title {
     margin-right: .7rem;
 }
 
-.modal-social-media {
-    padding: 2rem 0 0 0;
-}
+
 
 .modal-social-media p {
     color: var(--dark-blue);
@@ -289,11 +314,7 @@ x .form-title {
         font-size: 1.1rem;
     }
 
-    .form-text,
-    .information,
-    .modal-social-media p {
-        font-size: 0.8rem;
-    }
+
 
     .modal-icons a {
         width: 30px;
@@ -313,24 +334,18 @@ x .form-title {
         padding: 0.45rem 1.2rem;
     }
 }
+@media screen and (min-width:501px) {
 
-@media (max-width: 420px) {
-
-    .form-text,
-    .information:nth-of-type(1),
-    .modal-social-media p {
-        display: none;
+    .email-contact-info {
+        padding: 2rem;
     }
+    .form-text {
 
-    .modal-social-media {
-        padding: 0;
+        font-size: 1.3rem;
     }
-
-    .modal-bg {
-        padding: 3rem .5rem;
-    }
-
 }
+
+
 
 @media screen and (min-width:768px) {
     .email-contact-info {
@@ -338,16 +353,19 @@ x .form-title {
     }
 
     .form-text {
-        margin: 4rem 0 2rem;
         font-size: 1.3rem;
     }
 
-    .email-title {
-        margin-top: 2rem;
-    }
+
 
     .form {
-        height: 90%;
+        height: 70%;
+    }
+}
+@media screen and (min-width:1900px) {
+
+    .form {
+        height: 55%;
     }
 }
 
