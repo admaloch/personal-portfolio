@@ -26,12 +26,17 @@
     padding: .1rem 1rem;
     /* border: black solid 1px; */
     margin-bottom: 1rem;
-    max-width: 350px;
+    width: 275px;
+    height: 275px;
+
+    /* max-height: 250px; */
     /* width: 100%;
     height: 100%; */
     z-index: 1;
 
 }
+
+
 
 
 .project-item:nth-of-type(4) .project-description-btn,
@@ -66,8 +71,8 @@
     transition: all .5s;
     /* transform: scale(1.2); */
     border: var(--dark-blue) solid 3px;
-    height: 300px;
-    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.36);
+
+    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
 
 }
@@ -129,6 +134,8 @@
     /* border-radius: 5px; */
 }
 
+
+
 .image-overlay-blur {
     backdrop-filter: blur(5px);
 }
@@ -144,12 +151,7 @@
 }
 
 
-.image-overlay h4,
-.image-overlay p,
-.image-overlay button,
-.image-overlay .code-links {
-    margin: .3rem 0;
-}
+
 
 .image-overlay h4,
 .image-overlay p {
@@ -165,10 +167,13 @@
     line-height: 15px;
     letter-spacing: 2px;
     /* max-width: 75%; */
-    font-size: .85rem;
+    font-size: .65rem;
     margin-bottom: 0;
+    margin-top: .4rem;
     border-radius: 5px;
 }
+
+
 
 .image-title {
     line-height: 19px;
@@ -178,25 +183,41 @@
 
     text-align: center;
     margin-bottom: 0;
+    margin-top: .9rem;
 }
-
+/* 817e2c ff2300 9aa2ff a657ad*/
 .project-description-btn {
-    font-size: .55em;
-    margin: 0rem;
-    letter-spacing: .15em;
-    border-radius: 5px;
-    opacity: 100;
-    background-color: transparent;
-    color: white;
-    padding: .5rem 1rem;
-    border: white solid 2px;
+    border: transparent solid 2px;
+    border-radius: 7px;
+    width: 35px;
+    height: 35px;
+    padding: .15rem;
+    filter: invert(100);
     transition: all .25s ease-in-out;
 }
 
 .project-description-btn:hover {
-    background-color: white;
-    color: black;
-    border: white solid 2px;
+    background-color: #9d9935;
+    border: black solid 2px;
+    /* filter: invert(0);
+    border: black solid 2px;
+    background-color: white; */
+}
+
+.image-overlay .project-description-btn,
+.image-overlay .code-links a {
+    pointer-events: none;
+    cursor: default;
+}
+
+.image-overlay:hover .project-description-btn,
+.image-overlay:hover .code-links a {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+#burger-btn {
+    opacity: 0;
 }
 
 .btn-style {
@@ -223,7 +244,7 @@
 
 .code-links {
     position: relative;
-    /* top: 1rem; */
+    bottom: .7rem;
 }
 
 
@@ -304,7 +325,7 @@
     bottom: 0;
     left: 0;
     border-radius: none;
-  background-color: white;
+    background-color: white;
 
     overflow-y: auto;
     opacity: 0;

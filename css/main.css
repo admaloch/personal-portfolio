@@ -78,6 +78,12 @@ body {
     font-family: var(--font1);
 }
 
+.custom-popover {
+    --bs-popover-border-color: var(--dark-blue);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .1rem;
+    --bs-popover-body-margin: .5rem;
+  }
 
 /* #main {
     opacity: 0;

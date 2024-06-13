@@ -4,13 +4,16 @@ const moreInfoBtnHandler = (btn) =>{
     const closeBioIcon = projectInfoOverlay.querySelector('.close-project-bio')
     const biotext = projectInfoOverlay.querySelector('.bio-text')
     projectInfoOverlay.classList.add('project-info-appear')
+    document.body.style.overflow = 'hidden'
     closeBioIcon.addEventListener('click', () => {
         projectInfoOverlay.classList.remove('project-info-appear')
         scrollItemToTop(biotext)
+        document.body.style.overflow = 'auto'
     })
     projectInfoOverlay.addEventListener('mouseleave', () => {
         projectInfoOverlay.classList.remove('project-info-appear')
         scrollItemToTop(biotext)
+        document.body.style.overflow = 'auto'
     })
 }
 

@@ -1,8 +1,11 @@
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
 // scroll library
 AOS.init({})
 
 // loading animation
-fadeLoadingAnimation();
+// fadeLoadingAnimation();
 
 // tooltips/popovers etc..
 showEvents.forEach((event) => {

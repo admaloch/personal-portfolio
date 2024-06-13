@@ -17,7 +17,7 @@ const showModal = (contactButton) => {
         modalTitle.innerText = contactButton.title;
         modalParagraph.innerText = contactButton.dataset.content;
     }
-    nav.classList.add('d-none')
+
     modalBG.style.width = "100vw";
     modalBG.style.height = "100vh";
     modalBG.style.opacity = 1;
@@ -25,7 +25,7 @@ const showModal = (contactButton) => {
 }
 
 const closeModal = () => {
-    nav.classList.remove('d-none')
+
     modalBG.style.width = 0;
     modalBG.style.height = 0;
     modalBG.style.opacity = 0;
