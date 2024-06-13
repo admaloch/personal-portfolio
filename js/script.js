@@ -5,7 +5,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 AOS.init({})
 
 // loading animation
-// fadeLoadingAnimation();
+fadeLoadingAnimation();
 
 // tooltips/popovers etc..
 showEvents.forEach((event) => {
