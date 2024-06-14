@@ -109,13 +109,13 @@
 
 #photo-section img {
 
-    width: 200px;
+    max-width: 300px;
     border-radius: 20px;
 }
 
 
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     #photo-section img {
         width: 250px;
     }
@@ -131,7 +131,7 @@
     #photo-section img {
         width: 300px;
     }
-}
+} */
 
 
 .link-style {
