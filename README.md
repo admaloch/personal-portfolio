@@ -1,7 +1,7 @@
 # Personal portfolio page
 
 <b>About this Project:</b><br/>
-This is an early portfolio project built with HTML, CSS, and JavaScript. Recently, I updated and improved some of the code and got rid of some unnecessary features.
+This is an early portfolio project built with HTML, CSS, and JavaScript. Recently updated with improved design and updated projects.
 
 <b>Technologies used:</b><br/>
 --HTML<br/>
