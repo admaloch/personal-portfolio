@@ -8,12 +8,10 @@ const moreInfoBtnHandler = (btn) =>{
     closeBioIcon.addEventListener('click', () => {
         projectInfoOverlay.classList.remove('project-info-appear')
         scrollItemToTop(biotext)
-        document.body.style.overflow = 'auto'
     })
     projectInfoOverlay.addEventListener('mouseleave', () => {
         projectInfoOverlay.classList.remove('project-info-appear')
         scrollItemToTop(biotext)
-        document.body.style.overflow = 'auto'
     })
 }
 
