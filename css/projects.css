@@ -354,6 +354,16 @@ line-height: 19px;
     width: 100%;
     overflow: scroll;
 
+
+}
+
+.bio-text a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+    transition: .15s ease-in-out opacity;
+}
+.bio-text a:hover {
+    opacity: .7;
 }
 
 .project-info-wrap h5 {
