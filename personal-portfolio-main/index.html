@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio updated</title>
     <!-- fonts -->
@@ -41,7 +42,7 @@
 
 </head>
 
-<body>
+<body class="no-scroll">
     <!-- load animation section -->
     <div class="loader ">
         <div class="dots">
@@ -53,59 +54,57 @@
         </div>
     </div>
 
-    <div id="main">
+    <!-- scroll progress bar -->
+    <header class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-bar-inner">0%</div>
+        </div>
+    </header>
 
-        <!-- scroll progress bar -->
-        <header class="progress-container">
-            <div class="progress-bar">
-                <div class="progress-bar-inner">0%</div>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg  p-md-3 bg-custom-light">
+        <div class="container">
+            <button type="button" class="navbar-toggler nav-btn-style" id="burger-btn" data-bs-target="#navbarNav"
+                data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false"
+                aria-lable="Toggle Navbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav-ul"
+                    class="navbar-nav nav-fill nav-style d-flex justify-content-between align-items-center ">
+                    <li data-aos-delay="1500" data-aos-duration="1300" data-aos="fade-right" class="nav-item">
+                        <a href="#home" class="nav-link text-style">Home</a>
+                    </li>
+                    <li data-aos-delay="1500" data-aos-duration="1300" data-aos="fade-right" class="nav-item">
+                        <a href="#about" class="nav-link text-style">About</a>
+                    </li>
+                    <li data-aos-delay="1500" data-aos-duration="1300" data-aos="zoom-in" class="nav-item">
+                        <a href="#skills" class="nav-link text-style">Skills</a>
+                    </li>
+                    <li data-aos-delay="1500" data-aos-duration="1300" data-aos="fade-left" class="nav-item">
+                        <a href="#projects" class="nav-link text-style">Projects</a>
+                    </li>
+                    <li data-aos-delay="1500" data-aos-duration="1300" data-aos="fade-left" class="nav-item">
+                        <a href="#contact" class="nav-link text-style">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <!-- Navbar -->
-        <nav id="navbar" class="navbar fixed-top navbar-expand-lg  p-md-3 bg-custom-light">
-            <div class="container">
-                <button type="button" class="navbar-toggler nav-btn-style" id="burger-btn" data-bs-target="#navbarNav"
-                    data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false"
-                    aria-lable="Toggle Navbar">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul id="nav-ul"
-                        class="navbar-nav nav-fill nav-style d-flex justify-content-between align-items-center ">
-                        <li data-aos-delay="1600" data-aos-duration="1300" data-aos="fade-right" class="nav-item">
-                            <a href="#home" class="nav-link text-style">Home</a>
-                        </li>
-                        <li data-aos-delay="1600" data-aos-duration="1300" data-aos="fade-right" class="nav-item">
-                            <a href="#about" class="nav-link text-style">About</a>
-                        </li>
-                        <li data-aos-delay="1600" data-aos-duration="1300" data-aos="zoom-in" class="nav-item">
-                            <a href="#skills" class="nav-link text-style">Skills</a>
-                        </li>
-                        <li data-aos-delay="1600" data-aos-duration="1300" data-aos="fade-left" class="nav-item">
-                            <a href="#projects" class="nav-link text-style">Projects</a>
-                        </li>
-                        <li data-aos-delay="1600" data-aos-duration="1300" data-aos="fade-left" class="nav-item">
-                            <a href="#contact" class="nav-link text-style">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Banner Image -->
+<!-- Banner Image -->
         <section id="home" class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center mb-0">
             <div class="content text-center ">
-                <h1 data-aos-delay="1600" data-aos-duration="1300" data-aos="fade-left"
+                <h1 data-aos-delay="1500" data-aos-duration="1000" data-aos="fade-left"
                     class=" display-1 mb-1 main-text">Davis Maloch</h1>
-                <h2 data-aos-delay="1600" data-aos-duration="1300" data-aos="fade-right" class=" display-4 main-text">
+                <h2 data-aos-delay="1500" data-aos-duration="1000" data-aos="fade-right" class=" display-4 main-text">
                     Self taught Developer</h2>
-                <h2 data-aos-delay="1600" data-aos-duration="1300" data-aos="fade-left" class=" display-4 main-text">
+                <h2 data-aos-delay="1500" data-aos-duration="1000" data-aos="fade-left" class=" display-4 main-text">
                     Tallahassee Florida</h2>
                 <div class="main-btn">
                     <a href="#about">
-                        <i data-aos-delay="1600" data-aos-duration="1300" data-aos="flip-left" id="arrow-scroll-trigger"
+                        <i data-aos-delay="1500" data-aos-duration="1000" data-aos="flip-left" id="arrow-scroll-trigger"
                             aria-describedby="tooltip" class="fa-regular fa-circle-down"></i>
                     </a>
                 </div>
@@ -117,13 +116,11 @@
             </div>
         </section>
 
-
-        <!-- social media icons -->
-        <section class="social-buttons">
+            <!-- social media icons -->
+        <aside class="social-buttons">
             <ul>
                 <li><a target="_blank" href="https://www.facebook.com/davis.maloch">facebook<i
                             class="fa-brands fa-facebook-f"></i></a></li>
-
                 <li><a target="_blank" href="https://github.com/admaloch">Personal<i
                             class="fa-brands fa-github"></i></a>
                 </li>
@@ -132,24 +129,24 @@
                 </li>
                 <li><a target="_blank" href="https://www.youtube.com/channel/UCg_yLlKhfIXdid1imiEIwdA">Youtube<i
                             class="fa-brands fa-youtube"></i></a></li>
-
             </ul>
-        </section>
+        </aside>
 
+    <main id="main">        
         <!-- About section -->
-        <section data-aos="fade-in" id="about" class="background-1 ">
+        <section  id="about" class="background-1 ">
             <div class="container-md d-grid about-style justify-content-center align-items-center">
-                <h3 data-aos="fade-right" class="display-5 mb-2"> About:</h3>
+                <h3 class="display-5 mb-2"> About:</h3>
                 <div id="about-container" class=" d-flex flex-column flex-lg-row align-items-center">
 
 
                     <div
                         class="d-flex col-12 col-lg-6 flex-column flex-sm-row flex-lg-column-reverse justify-content-center align-items-center">
-                        <div data-aos="flip-up" id="photo-section"
+                        <div  id="photo-section"
                             class="p-3 d-flex personal-info-section justify-content-center align-items-center ">
-                            <img class="img-fluid portrait-style" src="./img/portrait-5.png" alt="portrait photo">
+                            <img loading="lazy" class="img-fluid portrait-style" src="./img/portrait-5.png" alt="portrait photo">
                         </div>
-                        <div data-aos="flip-down"
+                        <div 
                             class="bio-section-btns  p-3  d-flex flex-row flex-wrap flex-sm-column flex-lg-row justify-content-center ">
                             <div data-id="about" class="bio-btn active col-6 col-sm-12 col-lg-6">Overview</div>
                             <div data-id="coding" class="bio-btn col-6 col-sm-12 col-lg-6">Coding</div>
@@ -164,7 +161,7 @@
                         </div>
                     </div>
 
-                    <div data-aos="fade-left" class="about-text">
+                    <div data-aos="fade-up" class="about-text">
                         <div id="about-section" data-id="about" class="bio-section ">
                             <h4>Overview:</h4>
                             <p>Motivated full-stack developer looking to join a team of individuals who
@@ -247,7 +244,7 @@
         <section id="skills" class="background-2   ">
             <!-- skillset animation -->
             <div class="container-md ">
-                <div data-aos="fade-right" class=" display-5 ">
+                <div class=" display-5 ">
                     <div
                         class="skill-title-container d-flex flex-column justify-content-center flex-sm-row justify-content-sm-start  align-items-center mb-sm-4 mb-lg-5">
                         <h3 class="display-5">Current Skillset: </h3>
@@ -263,13 +260,13 @@
                     </div>
 
                 </div>
-                <!-- animated boxes -->
+
                 <!--hover boxes-->
                 <div class="my-3 ">
-                    <div class="accordion " id="bio-accordion">
+                    <div data-aos="fade-up"  class="accordion " id="bio-accordion">
 
 
-                        <div data-aos="flip-right" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingJS">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseJS" aria-expanded="false" aria-controls="collapseJS">
@@ -286,7 +283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-left" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingReact">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseReact" aria-expanded="false" aria-controls="collapseReact">
@@ -303,7 +300,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-right" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingNextJS">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseNextJS" aria-expanded="false"
@@ -323,7 +320,7 @@
                             </div>
                         </div>
 
-                        <div data-aos="flip-left" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingTS">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTS" aria-expanded="false" aria-controls="collapseTS">
@@ -339,7 +336,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-right" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingJquery">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseJquery" aria-expanded="false"
@@ -358,7 +355,7 @@
                         </div>
 
 
-                        <div data-aos="flip-left" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingGit">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseGit" aria-expanded="false" aria-controls="collapseGit">
@@ -375,7 +372,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-right" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingNode">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseNode" aria-expanded="false" aria-controls="collapseNode">
@@ -393,7 +390,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-left" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingExpress">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseExpress" aria-expanded="false"
@@ -411,7 +408,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-right" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingMongo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseMongo" aria-expanded="false" aria-controls="collapseMongo">
@@ -429,7 +426,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-left" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingPhp">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsePhp" aria-expanded="false" aria-controls="collapsePhp">
@@ -444,7 +441,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-right" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingAlgos">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseAlgos" aria-expanded="false" aria-controls="collapseAlgos">
@@ -464,7 +461,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-left" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingDesign">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseDesign" aria-expanded="false"
@@ -483,7 +480,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-right" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingCSS">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseCSS" aria-expanded="false" aria-controls="collapseCSS">
@@ -498,7 +495,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="flip-left" class="accordion-item">
+                        <div class="accordion-item">
                             <h4 class="accordion-header" id="headingBatch">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseBatch" aria-expanded="false" aria-controls="collapseBatch">
@@ -526,20 +523,20 @@
         <section id="projects" class="background-1 ">
             <div class="container-lg d-flex flex-column">
                 <div class=" project-text mb-4 mb-lg-5">
-                    <h3 data-aos="fade-right" class="display-5">Projects: </h3>
+                    <h3 class="display-5">Projects: </h3>
                 </div>
                 <div class="projects-main ">
                     
-                    <div data-aos="fade-left" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/react-movies.png" alt="react movie app screenshot">
+                            <img loading="lazy" class="image-img" src="./img/react-movies.png" alt="react movie app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Movie Brain</h4>
                                 <p class="image-description text-center">Custom movie search app built with MERN and OMDb API</p>
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -565,7 +562,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -582,16 +579,16 @@
 
                     </div>
 
-                    <div data-aos="fade-down" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/react-blackjack.png" alt="blackjack menu screenshot">
+                            <img loading="lazy" class="image-img" src="./img/react-blackjack.png" alt="blackjack menu screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Blackjack Game</h4>
                                 <p class="image-description text-center">Custom blackjack game built with MERN</p>
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -618,7 +615,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text ">
                                             <h5>Project details:</h5>
@@ -635,10 +632,10 @@
                         </div>
 
                     </div>
-                    <div data-aos-duration="400" data-aos="fade-right"
+                    <div data-aos="fade-up"
                         class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/flourish.png" alt="Flourish menu screenshot">
+                            <img loading="lazy" class="image-img" src="./img/flourish.png" alt="Flourish menu screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Flourish Accessibility Menu</h4>
                                 <p class="image-description text-center">Custom web accesibility menu built for
@@ -646,7 +643,7 @@
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -673,7 +670,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text ">
                                             <h5>Project details:</h5>
@@ -700,9 +697,9 @@
                     </div>
                     
 
-                    <div data-aos="flip-right" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up"class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/node-blackjack.png" alt="Blackjack app screenshot">
+                            <img loading="lazy" class="image-img" src="./img/node-blackjack.png" alt="Blackjack app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Blackjack</h4>
                                 <p class="image-description text-center">A custom command line black jack game built with
@@ -710,7 +707,7 @@
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper wrapper-2 blackjack-github">
@@ -727,7 +724,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -751,10 +748,10 @@
                     </div>
 
                     
-                    <div data-aos-duration="400" data-aos="flip-left"
+                    <div data-aos="fade-up"
                     class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                     <div class="images">
-                        <img class="image-img" src="./img/countytimeline.png" alt="Florid county tool screenshot">
+                        <img loading="lazy" class="image-img" src="./img/countytimeline.png" alt="Florid county tool screenshot">
                         <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                             <h4 class="image-title">Florida County Research Tool</h4>
                             <p class="image-description text-center">A page I designed, featuring a Florida county
@@ -765,7 +762,7 @@
                             <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                 data-bs-placement="top" data-bs-content="Read Full Description"
                                 data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                <img src="./img/read-more.png" alt="Read more icon">
+                                <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                             </div>
                             <div class="code-links disabled">
                                 <div class="hover-wrapper ">
@@ -792,7 +789,7 @@
                             <div class="project-info ">
                                 <div class="project-info-wrap ">
                                     <div class="close-project-bio">
-                                        <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                        <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                     </div>
                                     <div class="bio-text">
                                         <h5>Project details:</h5>
@@ -824,9 +821,9 @@
                    
 
                     
-                    <div data-aos="fade-down" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/photo-transfer.png" alt="Blackjack app screenshot">
+                            <img loading="lazy" class="image-img" src="./img/photo-transfer.png" alt="Blackjack app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Photo Order Transfer Tool</h4>
                                 <p class="image-description text-center">Windows batch script designed to streamline
@@ -834,7 +831,7 @@
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper wrapper-2 blackjack-github">
@@ -851,7 +848,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -876,16 +873,16 @@
 
                     </div>
 
-                    <div data-aos="flip-left" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up"class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/qr-generator.png" alt="qr img generator screenshot">
+                            <img loading="lazy" class="image-img" src="./img/qr-generator.png" alt="qr img generator screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Image Based QR code generator</h4>
                                 <p class="image-description text-center">Image Based QR Code Generator</p>
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -911,7 +908,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -935,9 +932,9 @@
                         </div>
 
                     </div>
-                    <div data-aos="fade-right" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/img-slider.png" alt="folk fest image slider screenshot">
+                            <img loading="lazy" class="image-img" src="./img/img-slider.png" alt="folk fest image slider screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Florida Folk Festival Image Display</h4>
                                 <p class="image-description text-center">Image slider with dynamic QR code generation
@@ -945,7 +942,7 @@
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -972,7 +969,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -995,16 +992,16 @@
                         </div>
 
                     </div>
-                    <div data-aos="zoom-in-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/movie-js.png" alt="javascript movie app screenshot">
+                            <img loading="lazy" class="image-img" src="./img/movie-js.png" alt="javascript movie app screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Javascript Movie Search</h4>
                                 <p class="image-description text-center">Movie search app built using OMDB API</p>
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -1031,7 +1028,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -1058,10 +1055,10 @@
                     </div>
 
 
-                    <div data-aos-duration="800" data-aos="zoom-in-up"
+                    <div data-aos="fade-up"
                         class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/blackhistorycollections.png"
+                            <img loading="lazy" class="image-img" src="./img/blackhistorycollections.png"
                                 alt="black history collections webpage screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Florida Memory Black History Research Guide</h4>
@@ -1073,7 +1070,7 @@
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover"
                                     class="project-description-btn disabled d-none">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -1093,10 +1090,10 @@
                         </div>
 
                     </div>
-                    <div data-aos-duration="1200" data-aos="flip-right"
+                    <div  data-aos="fade-up"
                         class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/cataloguing.png"
+                            <img loading="lazy" class="image-img" src="./img/cataloguing.png"
                                 alt="folk fest programs screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Cataloguing Tool</h4>
@@ -1106,7 +1103,7 @@
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -1133,7 +1130,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -1141,18 +1138,15 @@
                                                 I am currently developing a cataloguing tool to assist the Florida Department of State in streamlining and standardizing its cataloguing process. This tool will handle the organization and formatting of names, places, and subjects, ensuring consistency across entries and preventing common errors. By standardizing the input process, it will help eliminate inconsistencies, while also simplifying the approval workflow and inserting records into the database. The goal is to create a more efficient system that reduces manual work and improves overall data accuracy and management.
                                             </p>
                                         </div>
-
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div data-aos="fade-left" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div data-aos="fade-up" class="project-item col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="images">
-                            <img class="image-img" src="./img/yelp-camp.png" alt="Yelp Camp screenshot">
+                            <img loading="lazy" class="image-img" src="./img/yelp-camp.png" alt="Yelp Camp screenshot">
                             <div class="image-overlay  d-flex flex-column justify-content-center align-items-center">
                                 <h4 class="image-title">Yelp Camp</h4>
                                 <p class="image-description text-center">CRUD app built with Node, Express, MongoDB,
@@ -1161,7 +1155,7 @@
                                 <div data-bs-trigger="hover" data-bs-container="body" data-bs-toggle="popover"
                                     data-bs-placement="top" data-bs-content="Read Full Description"
                                     data-bs-custom-class="custom-popover" class="project-description-btn disabled">
-                                    <img src="./img/read-more.png" alt="Read more icon">
+                                    <img loading="lazy" src="./img/read-more.png" alt="Read more icon">
                                 </div>
                                 <div class="code-links disabled">
                                     <div class="hover-wrapper ">
@@ -1186,7 +1180,7 @@
                                 <div class="project-info ">
                                     <div class="project-info-wrap ">
                                         <div class="close-project-bio">
-                                            <img src="./img/x-icon.svg" alt="close-bio-icon">
+                                            <img loading="lazy" src="./img/x-icon.svg" alt="close-bio-icon">
                                         </div>
                                         <div class="bio-text">
                                             <h5>Project details:</h5>
@@ -1215,68 +1209,65 @@
 
         </section>
 
-
-
-
         <!-- Contact section -->
         <section id="contact" class="background-2 ">
             <div class="container-md">
-                <div data-aos="fade-right">
+                <div>
                     <h3 class="display-5">Contact me: </h3>
                 </div>
-                <div id="contact-bubbles" class="contact-bubbles d-flex flex-wrap">
+                <div  data-aos="fade-up" id="contact-bubbles" class="contact-bubbles d-flex flex-wrap">
 
-                    <div data-aos="fade-right" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
                             <div class="contact-btn row-bubbles row-bubbles1" data-toggle="popover" title="Hiring"
                                 data-content="Currently looking for a developer position. If you have a anything available and think I would be a good fit for your team, I would love to discuss the details.">
-                                <img src="./img/contactgeneral.svg" alt="html svg">
+                                <img loading="lazy" src="./img/contactgeneral.svg" alt="html svg">
                             </div>
                             <p class="contact-info">Hiring</p>
                         </div>
                     </div>
-                    <div data-aos="fade-down" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container ">
                             <div class="contact-btn row-bubbles row-bubbles2" title="Freelance"
                                 data-content="Currently seeking out freelance projects. If you have something you need done, feel free to send me an email.">
-                                <img src="./img/contactfreelance.svg" alt="html svg">
+                                <img loading="lazy" src="./img/contactfreelance.svg" alt="html svg">
                             </div>
                             <p class="contact-info .font-weight-bold">Freelance</p>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
                             <div class="contact-btn row-bubbles row-bubbles3" title="Projects"
                                 data-content="Always interested in checking out what other developers are up to. If you have an interesting project and want a second set of eyes, feel free to send me an email.">
-                                <img src="./img/contactfreelance.svg" alt="html svg">
+                                <img loading="lazy" src="./img/contactfreelance.svg" alt="html svg">
                             </div>
                             <p class="contact-info">Projects</p>
                         </div>
                     </div>
 
-                    <div data-aos="fade-right" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
                             <div class="contact-btn row-bubbles row-bubbles1" title="Collaboration"
                                 data-content="Interested in joining in on interesting projects. Hit me up if you want to put something together">
-                                <img src="./img/contactcollaboration.svg" alt="html svg">
+                                <img loading="lazy" src="./img/contactcollaboration.svg" alt="html svg">
                             </div>
                             <p class="contact-info">Collaboration</p>
                         </div>
                     </div>
-                    <div data-aos="fade-up" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container new-margin">
                             <div class="contact-btn row-bubbles row-bubbles2" title="Music"
                                 data-content="Always into geeking out about music/gear etc..">
-                                <img src="./img/contactnonprofit.svg" alt="html svg">
+                                <img loading="lazy" src="./img/contactnonprofit.svg" alt="html svg">
                             </div>
                             <p class="contact-info">Music</p>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="col-6 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
                         <div class="d-flex flex-column align-items-center bubble-container">
                             <div class="contact-btn row-bubbles row-bubbles3" title="Anything Else"
                                 data-content="I'm available to chat about anything else, wether its development, audio production, film or dogs. Feel free to send a message!">
-                                <img src="./img/contactquestion.svg" alt="html svg">
+                                <img loading="lazy" src="./img/contactquestion.svg" alt="html svg">
                             </div>
                             <p class="contact-info">General</p>
                         </div>
@@ -1284,10 +1275,10 @@
 
                 </div>
                 <div class="button-container d-flex justify-content-center align-items-center">
-                    <button data-aos="zoom-out" type="button" id="email-btn"
+                    <buttontype="button" id="email-btn"
                         class="btn contact-btn my-2 my-md-4 my-lg-5">
                         Email Me
-                    </button>
+                    </buttontype=>
                 </div>
             </div>
             <div data-aos="zoom-in" data-aos-duration="700" class="background-shape"></div>
@@ -1297,7 +1288,7 @@
         </section>
 
         <!-- email modal -->
-        <div class="modal-bg  ">
+        <section class="modal-bg  ">
             <!-- contact-btn-form -->
             <div class="contact-item d-none">
                 <div class="title-container">
@@ -1387,10 +1378,10 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
         <!-- footer -->
-        <section id="footer" class="background-1">
+        <footer id="footer" class="background-1">
             <div class="container footer-container d-flex flex-column justify-content-center align-items-center ">
 
                 <p>Site Design by Davis Maloch</p>
@@ -1404,10 +1395,11 @@
                 <p>Source Code hosted on <a class="port-code" href="https://github.com/admaloch?tab=repositories"
                         target="_blank">Github</a></p>
             </div>
-        </section>
-    </div>
+        </footer>
+    </main>
 
     <!-- JS files -->
+
     <!-- popper/jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -1415,13 +1407,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
         integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- bootstrap js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script> -->
+   
+        <!-- bootstrap js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"
         integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- other libraries -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- main js file -->
