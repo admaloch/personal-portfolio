@@ -147,11 +147,16 @@ body {
   font-family: var(--font5);
 }
 
+
+
 .banner-image {
-  background-image: url("../img/photo5.jpg");
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/photo5.webp");
   background-size: cover;
-  margin-bottom: 0;
+  background-position: center;
 }
+
 
 .main-text {
   font-family: "Caveat", cursive;

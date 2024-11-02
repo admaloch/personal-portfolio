@@ -5,7 +5,7 @@ const main = document.querySelector("#main");
 function fadeLoadingAnimation() {
   let fadeOutTime = 200;
   let delayTime = 1500;
-  if (window.scrollY === 0) {
+  if (window.scrollY === 0 && window.innerWidth > 600) {
     fadeOutTime = 200;
     delayTime = 1500;
   } else {
@@ -29,3 +29,5 @@ const setAOSDelay = (delayAmount) => {
     element.setAttribute("data-aos-delay", delayAmount);
   });
 };
+
+fadeLoadingAnimation();
