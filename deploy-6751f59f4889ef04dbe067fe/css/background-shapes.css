@@ -1,0 +1,64 @@
+.background-shape {
+    position: absolute;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#about .background-shape,
+#projects .background-shape {
+    background-color: var(--dark-blue);
+    opacity: .04;
+}
+
+
+
+#about .background-shape:nth-of-type(2),
+#projects .background-shape:nth-of-type(2) {
+    top: 20%;
+    right: 6%;
+}
+
+#about .background-shape:nth-of-type(3),
+#projects .background-shape:nth-of-type(3) {
+    top: 50%;
+    left: 5%;
+}
+
+#about .background-shape:nth-of-type(4),
+#projects .background-shape:nth-of-type(4) {
+    bottom: 10%;
+    right: 13%;
+}
+
+#contact .background-shape,
+#skills .background-shape {
+    background-color: #fff;
+    opacity: .04;
+}
+
+#contact .background-shape:nth-of-type(2),
+#skills .background-shape:nth-of-type(2) {
+    top: 20%;
+    left: 9%;
+}
+
+#contact .background-shape:nth-of-type(3),
+#skills .background-shape:nth-of-type(3) {
+    top: 60%;
+    right: 50%;
+}
+
+#contact .background-shape:nth-of-type(4),
+#skills .background-shape:nth-of-type(4) {
+    bottom: 3%;
+    right: 15%;
+}
+
+#contact .background-shape:nth-of-type(5),
+#skills .background-shape:nth-of-type(5) {
+    top: 30%;
+    right: 6%;
+}
