@@ -1,0 +1,154 @@
+#navbar {
+  z-index: 100;
+}
+.bg-custom-dark {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+/* nav style before scroll */
+.nav-style {
+  width: 100%;
+  list-style: none;
+  border: var(--dark-blue) solid 3px;
+  border-radius: 7px;
+  background: var(--2nd-gradiant-1);
+  background: var(--2nd-gradiant-2);
+}
+
+@media screen and (min-width: 992px) {
+  .nav-style {
+    width: 100%;
+    list-style: none;
+    background: none;
+    border: none;
+    border-radius: none;
+  }
+}
+
+/* nav style after scroll */
+.nav-style li {
+  /* height: 60px; */
+  width: 100%;
+  font-size: 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-style li a {
+  color: var(--dark-blue);
+  z-index: 100;
+  transition: 0.5s;
+}
+.nav-style li a:hover {
+  color: #fcf6bd;
+  letter-spacing: 1.2rem;
+  margin-left: 20px;
+}
+.nav-style li::before,
+.nav-style li::after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+.nav-style li:before {
+  height: 100%;
+  width: 0;
+  right: 0;
+  border-top: 2px solid #dbffe5;
+  border-bottom: 2px solid #ffdeff;
+  transition: all 300ms cubic-bezier(0.075, 0.81, 0.165, 1);
+  background-color: #fafac6;
+}
+.nav-style li:after {
+  background-color: transparent;
+  height: calc(100% - 4px);
+  width: 0;
+  left: 0;
+  transition: all 300ms cubic-bezier(0.075, 0.81, 0.165, 1);
+}
+/* On hover the 'before' and 'after' element's width is increased from zero to 100%, this caused the 'before' elements's top and bottom borders to increase the width from 0 to 100%, in 'after' element the increase cause the background fill effect*/
+.nav-style li:hover:before {
+  width: 100%;
+}
+.nav-style li:hover:after {
+  width: 100%;
+  background-color: #003566;
+}
+.nav-style-scroll li a:hover {
+  color: var(--dark-blue);
+}
+/* nav after scroll */
+.nav-style-scroll {
+  height: 30px;
+}
+.nav-style-scroll li a {
+  color: white;
+}
+.nav-style-scroll li a:hover {
+  color: #003566;
+}
+.nav-style-scroll li:hover:after {
+  background-color: #fcf6bd;
+  opacity: 0.5;
+}
+.nav-btn-style {
+  border: var(--dark-blue) solid 2px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.nav-btn-style:hover {
+  background-color: aliceblue;
+}
+.nav-wrapper {
+  border: var(--dark-blue) solid 2px;
+}
+
+#burger-btn:hover {
+  background: var(--2nd-gradiant-1);
+  background: var(--2nd-gradiant-2);
+}
+
+@media (max-width: 992px) {
+  .nav-style {
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 45%;
+    list-style: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-style li {
+    font-size: 1.3rem;
+  }
+  .nav-style li a:hover {
+    letter-spacing: 0.5rem;
+    margin-left: 0;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-style li {
+    font-size: 1.1rem;
+  }
+  .nav-style li a:hover {
+    letter-spacing: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-style li {
+    font-size: 1rem;
+  }
+  .nav-style li a:hover {
+    letter-spacing: 0;
+  }
+}

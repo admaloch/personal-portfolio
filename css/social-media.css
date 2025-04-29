@@ -1,0 +1,76 @@
+.fa-brands {
+    padding: 20px;
+    font-size: 25px;
+    width: 65px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 5px 12px;
+    text-align: center;
+}
+.social-buttons {
+    position: fixed;
+    top: 15rem;
+    opacity: 0;
+    transition: opacity .5s ease-in;
+    z-index: 2;
+    width: 70px;
+}
+.social-buttons ul {
+    padding: 0;
+    transform: translate(-240px, 0);
+}
+.social-buttons ul li {
+    background-color: rgba(0, 52, 89, .5);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin: 5px;
+    width: 300px;
+    padding: 6px;
+    text-align: right;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+    border: var(--off-white) solid 2px;
+}
+
+.social-buttons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-buttons ul li:hover {
+    transform: translate(150px, 0);
+}
+.social-buttons ul li i {
+    color: black;
+    width: 40px;
+    height: 40px;
+    transform: rotate(0deg);
+    padding: 10px;
+    font-size: 20px;
+    transition: all 1s;
+    background-color: var(--off-white);
+}
+.social-buttons ul li:hover i {
+    transform: rotate(360deg);
+    color: #fff;
+}
+.social-buttons ul li:hover .fa-linkedin {
+    background: #ef476f;
+}
+.social-buttons ul li:hover .fa-github {
+    background: #ffd166;
+}
+.social-buttons ul li:hover .fa-youtube {
+    background: #06d6a0;
+}
+.social-buttons ul li:hover .fa-facebook-f {
+    background: #118ab2;
+}
+
+@media (max-width: 768px) {
+    .social-buttons {
+        display: none;
+   }
+}

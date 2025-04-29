@@ -1,0 +1,157 @@
+#about {
+    position: relative;
+}
+
+#about .container-md * {
+    z-index: 1;
+}
+
+#bio-accordion {
+    width: 100%;
+    letter-spacing: 0px;
+    padding: 0 1rem;
+}
+
+#about-section h4 {
+    font-family: var(--font5);
+}
+
+.bio-btn {
+    /* margin: .3rem 1rem .3rem 0; */
+    border: var(--dark-blue) solid 3px;
+    padding: .5rem 0rem;
+    opacity: .6;
+    /* min-width: 210px; */
+    text-align: center;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    border: var(--off-white) solid 2px;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+    font-family: var(--font1);
+}
+
+.bio-btn:hover,
+.bio-btn.active {
+    opacity: 1;
+}
+
+@media screen and (min-width: 576px) {
+    .bio-btn {
+        padding: .5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bio-btn {
+        padding: .8rem 4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bio-btn {
+        padding: .7rem 2rem;
+    }
+}
+
+.about-text {
+
+    height: 100%;
+
+
+
+}
+
+.bio-section {
+    display: none;
+    padding: 1rem;
+    margin: 0 auto;
+    overflow-y: scroll;
+    max-height: 420px;
+
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.bio-section p {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 576px) {
+    .bio-section {
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bio-section {
+        max-height: none;
+        /* height: 450px; */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bio-section {
+        padding: 1rem 2rem;
+    }
+}
+
+
+.bio-lg-btns {
+    width: 100%;
+}
+
+.bio-section h4 {
+    text-align: center;
+}
+
+#photo-section img {
+
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+
+
+/* @media screen and (min-width: 768px) {
+    #photo-section img {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #photo-section img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #photo-section img {
+        width: 300px;
+    }
+} */
+
+
+.link-style {
+    font-style: italic;
+    color: var(--link-color);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    /* font-size: .7rem; */
+    letter-spacing: 1px;
+    border: transparent 1px solid;
+    padding: .1rem .3rem;
+    border-radius: 6px;
+    text-decoration: underline;
+
+    white-space: nowrap;
+}
+
+.link-style:hover {
+    border: var(--dark-blue) 1px solid;
+    color: var(--link-color);
+
+    opacity: .7;
+}

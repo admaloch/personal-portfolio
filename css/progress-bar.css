@@ -1,0 +1,31 @@
+.progress-container {
+    position: sticky;
+    top: 62px;
+    z-index: 150;
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+.progress-bar-inner {
+    position: relative;
+    font-size: .5em;
+    width: 0%;
+    padding: 0px;
+    color: white;
+    background-color: #ef476f;
+}
+@media (max-width: 992px) {
+    .progress-container {
+        position: sticky;
+        top: 0px;
+        z-index: 150;
+        opacity: 0;
+        transition: opacity .5s ease-in;
+   }
+}
